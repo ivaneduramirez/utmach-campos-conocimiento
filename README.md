@@ -12,18 +12,15 @@ archivo** y solo se descifran en el navegador de quien tenga las credenciales.
 Requiere dos factores:
 
 1. Usuario y contraseña.
-2. Código de 6 dígitos de **Google Authenticator**.
+2. Código de seguridad de 6 dígitos de la aplicación de autenticación
+   (Google Authenticator o equivalente).
 
-La clave de descifrado se deriva de la contraseña **y** del secreto del
-autenticador (PBKDF2-SHA256, 600 000 iteraciones → AES-256-GCM). Sin ambos
-factores el contenido es indescifrable: el secreto del autenticador **no está
-en este repositorio**.
+Cifrado AES-256-GCM con clave derivada por PBKDF2-SHA256 (600 000 iteraciones).
+El código de seguridad se verifica antes de descifrar, y no se guarda ningún
+dato en claro dentro de la página.
 
-La primera vez que se entra desde un equipo se pide, además, la clave de
-configuración del autenticador para autorizar ese dispositivo; queda guardada
-cifrada en el navegador y no vuelve a pedirse.
-
-La sesión permanece abierta hasta pulsar **Cerrar sesión**.
+Funciona igual en cualquier equipo, sin pasos de alta previos. La sesión
+permanece abierta hasta pulsar **Cerrar sesión**.
 
 ## Contenido
 
