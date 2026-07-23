@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#062044">
+<link rel="icon" href="./utmach-logo.png">
+<title>Información Académica de Profesores UTMACH · Buscador</title>
+<style>
+  /* ===== Tokens: idénticos a la app de Campos del Conocimiento ===== */
+  :root{
+    color-scheme:light;
+    --azul-900:#062044; --azul-700:#0E4C92; --azul-500:#1D6BC4; --azul-100:#DCE8F7; --azul-050:#F0F5FC;
+    --rojo-500:#C8102E; --rojo-acento:#E63950; --sobre-azul:#FFFFFF; --ext-tx:#6E5309;
+    --papel:#F5F8FC; --panel:#FFFFFF; --tinta:#11203A; --tinta-2:#4E6076; --linea:#D3DEEC;
+    --chip-bg:var(--azul-100); --chip-tx:#0A3C77;
+    --borde-campo:#7C879A; --ok:#0E7A4F; --warn:#96700B; --bad:#C8102E;
+    --sombra:0 1px 3px rgba(6,32,68,.10),0 4px 16px rgba(6,32,68,.07);
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark){:root{
+    color-scheme:dark;
+    --azul-900:#071426; --azul-700:#4E93DC; --azul-500:#5FA3E8; --azul-100:#14263D; --azul-050:#101D30;
+    --rojo-500:#FF6A72; --rojo-acento:#FF6A72; --sobre-azul:#04101F; --ext-tx:#E3BC4A;
+    --papel:#0A1220; --panel:#111C2E; --tinta:#E5EDF8; --tinta-2:#9CB0C9; --linea:#24344B;
+    --chip-bg:#14263D; --chip-tx:#A8CBF0;
+    --borde-campo:#5E7089; --ok:#40B57F; --warn:#E3BC4A; --bad:#FF7A80;
+    --sombra:0 1px 3px rgba(0,0,0,.45),0 4px 16px rgba(0,0,0,.28);
+  }}
+  :root[data-theme="dark"]{
+    color-scheme:dark;
+    --azul-900:#071426; --azul-700:#4E93DC; --azul-500:#5FA3E8; --azul-100:#14263D; --azul-050:#101D30;
+    --rojo-500:#FF6A72; --rojo-acento:#FF6A72; --sobre-azul:#04101F; --ext-tx:#E3BC4A;
+    --papel:#0A1220; --panel:#111C2E; --tinta:#E5EDF8; --tinta-2:#9CB0C9; --linea:#24344B;
+    --chip-bg:#14263D; --chip-tx:#A8CBF0;
+    --borde-campo:#5E7089; --ok:#40B57F; --warn:#E3BC4A; --bad:#FF7A80;
+    --sombra:0 1px 3px rgba(0,0,0,.45),0 4px 16px rgba(0,0,0,.28);
+  }
+  :root[data-theme="light"]{
+    color-scheme:light;
+    --azul-900:#062044; --azul-700:#0E4C92; --azul-500:#1D6BC4; --azul-100:#DCE8F7; --azul-050:#F0F5FC;
+    --rojo-500:#C8102E; --rojo-acento:#E63950; --sobre-azul:#FFFFFF; --ext-tx:#6E5309;
+    --papel:#F5F8FC; --panel:#FFFFFF; --tinta:#11203A; --tinta-2:#4E6076; --linea:#D3DEEC;
+    --chip-bg:var(--azul-100); --chip-tx:#0A3C77;
+    --borde-campo:#7C879A; --ok:#0E7A4F; --warn:#96700B; --bad:#C8102E;
+    --sombra:0 1px 3px rgba(6,32,68,.10),0 4px 16px rgba(6,32,68,.07);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;height:100%}
+  body{background:var(--papel);color:var(--tinta);
+    font:15px/1.55 "Avenir Next","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;height:100vh;display:flex;flex-direction:column;overflow:hidden}
+  h1,h2,h3{margin:0;text-wrap:balance}
+  button{font:inherit;cursor:pointer}
+  input,select{font:inherit}
+
+  /* ===== Header (navy, como Campos) ===== */
+  .topbar{background:var(--azul-900);color:#fff;padding:14px 22px;flex:none;
+    display:flex;align-items:center;gap:14px;box-shadow:var(--sombra);
+    border-bottom:3px solid var(--rojo-acento);flex-wrap:wrap;z-index:10}
+  .topbar .logo{width:38px;height:38px;flex:none;border-radius:9px;background:#fff;object-fit:contain;padding:3px}
+  .topbar .marca-txt{min-width:0}
+  .topbar h1{font-size:16px;font-weight:600;line-height:1.25;color:#fff}
+  .topbar .sub{font-size:12px;opacity:.75;margin-top:2px}
+  .topbar .filete{width:52px;height:4px;border-radius:2px;background:var(--rojo-acento);margin-left:auto;flex:none}
+  .navbtn{display:inline-flex;align-items:center;gap:6px;background:transparent;border:1px solid rgba(255,255,255,.35);
+    color:#fff;border-radius:7px;padding:6px 11px;font-size:12.5px;white-space:nowrap;text-decoration:none;flex:none}
+  .navbtn:hover{background:rgba(255,255,255,.12)}
+  .navbtn.link{border-color:rgba(255,255,255,.55);font-weight:600}
+  .navbtn.solid{background:var(--azul-700);border-color:var(--azul-700);color:var(--sobre-azul);font-weight:600}
+
+  /* ===== Layout master-detail (rail 340 + detalle), centrado como Campos ===== */
+  .app{flex:1;min-height:0;width:100%;max-width:1400px;margin:0 auto;
+    display:grid;grid-template-columns:340px 1fr}
+  .pane-list{border-right:1px solid var(--linea);background:var(--panel);
+    display:flex;flex-direction:column;min-height:0}
+  .pane-detail{overflow-y:auto;min-height:0;background:var(--papel)}
+
+  .lhead{padding:18px 16px 8px}
+  .buscar{position:relative}
+  .buscar .lupa{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--tinta-2)}
+  .buscar input{width:100%;padding:11px 34px 11px 38px;border:1.5px solid var(--borde-campo);border-radius:9px;
+    background:var(--papel);color:var(--tinta);font-size:14px}
+  .buscar input:focus{outline:2px solid var(--azul-500);outline-offset:1px;border-color:var(--azul-500)}
+  .buscar input::placeholder{color:var(--tinta-2)}
+  .buscar kbd{position:absolute;right:11px;top:50%;transform:translateY(-50%);font-size:11px;color:var(--tinta-2);
+    border:1px solid var(--linea);border-radius:6px;padding:1px 6px}
+  .filtros{display:flex;gap:8px;margin-top:10px}
+  select.f{flex:1;min-width:0;padding:7px 9px;border:1.5px solid var(--borde-campo);border-radius:8px;
+    background:var(--panel);color:var(--tinta);font-size:12.5px}
+  select.f:focus{outline:2px solid var(--azul-500);outline-offset:1px}
+  .count{font-size:12px;color:var(--tinta-2);margin:11px 2px 4px}
+  .count b{color:var(--tinta)}
+
+  .list{flex:1;overflow-y:auto;min-height:0;padding:2px 10px 12px}
+  .pitem{padding:10px 10px;border-radius:9px;cursor:pointer;border:1px solid transparent;margin-bottom:2px}
+  .pitem:hover{background:var(--azul-050)}
+  .pitem.sel{background:var(--azul-100);border-color:var(--azul-500)}
+  .pitem .nm{font-weight:600;font-size:13.5px;line-height:1.35;color:var(--tinta)}
+  .pitem .nm mark,.cabecera h2 mark{background:color-mix(in srgb,var(--azul-500) 26%,transparent);color:inherit;border-radius:3px;padding:0 2px}
+  .pitem .sub2{display:flex;align-items:center;gap:8px;margin-top:4px}
+  .pitem .ced{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:11.5px;color:var(--tinta-2)}
+  .pitem .cnt{font-size:11.5px;color:var(--tinta-2)}
+  .pitem .badge{margin-left:auto}
+  .list .empty2{padding:44px 18px;text-align:center;color:var(--tinta-2);font-size:13px;line-height:1.6}
+  .pane-list footer{padding:11px 16px;border-top:1px solid var(--linea);color:var(--tinta-2);font-size:10.5px;line-height:1.6}
+
+  /* ===== Badges (pastillas, como Campos) ===== */
+  .badge{display:inline-block;padding:2px 9px;border-radius:99px;font-size:11.5px;font-weight:600;
+    background:var(--azul-100);color:var(--chip-tx);border:1px solid transparent;white-space:nowrap}
+  .badge.destacado{background:var(--azul-700);color:var(--sobre-azul);border-color:var(--azul-700)}
+  .b-ext{background:color-mix(in srgb,var(--warn) 15%,transparent);color:var(--ext-tx);
+    border-color:color-mix(in srgb,var(--warn) 32%,transparent)}
+
+  /* ===== Detalle ===== */
+  .dwrap{padding:24px 28px 60px;max-width:900px}
+  .back-m{display:none;align-items:center;gap:6px;background:var(--panel);border:1.5px solid var(--borde-campo);
+    color:var(--tinta);border-radius:8px;padding:7px 12px;font-size:13px;font-weight:600;margin-bottom:16px}
+  .cabecera{background:var(--panel);border:1px solid var(--linea);border-radius:13px;padding:20px 22px;box-shadow:var(--sombra)}
+  .cab-top{display:flex;align-items:flex-start;gap:12px;justify-content:space-between}
+  .cabecera h2{font-size:21px;font-weight:700;line-height:1.25;color:var(--tinta)}
+  .datos{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:12px;font-size:13px;color:var(--tinta-2);align-items:center}
+  .datos b{color:var(--tinta);font-weight:600}
+  .ced-chip{background:var(--azul-050);border:1px solid var(--linea);border-radius:7px;padding:2px 9px;
+    font-family:var(--mono);font-size:12.5px;color:var(--tinta)}
+
+  .actions{display:flex;gap:8px;margin:18px 0 4px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:7px;background:var(--panel);border:1.5px solid var(--borde-campo);
+    color:var(--tinta);border-radius:8px;padding:8px 13px;font-size:13px;font-weight:600}
+  .btn:hover{border-color:var(--azul-500)}
+  .btn.prim{background:var(--azul-700);border-color:var(--azul-700);color:var(--sobre-azul)}
+  .btn.prim:hover{filter:brightness(.93)}
+
+  .sech{font-size:15px;font-weight:700;margin:24px 0 11px;display:flex;align-items:center;gap:9px;color:var(--tinta)}
+  .sech .num{background:var(--azul-700);color:var(--sobre-azul);border-radius:6px;font-size:11px;padding:2px 8px;
+    font-weight:600;letter-spacing:.02em;font-variant-numeric:tabular-nums}
+  .tit{background:var(--panel);border:1px solid var(--linea);border-radius:13px;padding:14px 16px;margin-bottom:11px;box-shadow:var(--sombra)}
+  .tit .t{font-weight:700;font-size:14.5px;line-height:1.35;color:var(--tinta)}
+  .tit .in{color:var(--azul-700);font-size:13px;margin-top:4px;font-weight:600}
+  .tit .bd{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px;align-items:center}
+  .tit .mt{color:var(--tinta-2);font-size:12px}
+  .tit .ob{color:var(--tinta-2);font-size:12px;margin-top:10px;font-style:italic;line-height:1.5;
+    border-top:1px dashed var(--linea);padding-top:9px}
+
+  .capbox{margin:16px 0 4px}
+  .capbox .panel{display:flex;align-items:center;gap:11px;flex-wrap:wrap;background:var(--panel);
+    border:1.5px solid var(--azul-500);border-radius:11px;padding:12px 14px;box-shadow:var(--sombra)}
+  .capbox img{height:44px;border-radius:6px;background:#000;image-rendering:pixelated}
+  .capbox input{width:130px;font-size:16px;letter-spacing:.14em;text-align:center;padding:8px 10px;
+    border-radius:8px;border:1.5px solid var(--borde-campo);background:var(--papel);color:var(--tinta)}
+  .capbox input:focus{outline:2px solid var(--azul-500);outline-offset:1px}
+  .capbox .msg{font-size:12.5px;color:var(--tinta-2);flex:1;min-width:140px}
+  .capbox .msg .err{color:var(--bad)}
+
+  .dempty{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:40px;color:var(--tinta-2)}
+  .dempty img{width:52px;height:52px;border-radius:12px;background:#fff;padding:4px;
+    border:1px solid var(--linea);box-shadow:var(--sombra);opacity:.9}
+  .dempty h3{margin:16px 0 8px;font-size:18px;color:var(--tinta);font-weight:700}
+  .dempty p{margin:0;max-width:420px;line-height:1.65;font-size:13.5px}
+
+  /* gate */
+  #gate{flex:1;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px}
+  #gate img{width:56px;height:56px;border-radius:12px;background:#fff;padding:4px;box-shadow:var(--sombra);border:1px solid var(--linea)}
+  #gate h2{margin:16px 0 6px;font-size:19px;font-weight:700}
+  #gate p{color:var(--tinta-2);margin:0 0 18px;max-width:400px;line-height:1.6}
+
+  .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);
+    background:var(--azul-900);color:#fff;padding:11px 18px;border-radius:10px;font-size:13px;opacity:0;
+    transition:.25s;box-shadow:0 10px 30px rgba(0,0,0,.4);z-index:50;pointer-events:none;
+    border:1px solid rgba(255,255,255,.14)}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  /* ===== Responsive ===== */
+  @media (max-width:900px){
+    .app{grid-template-columns:1fr}
+    .pane-detail{display:none}
+    .app.show-detail .pane-list{display:none}
+    .app.show-detail .pane-detail{display:block;overflow-y:auto}
+    .back-m{display:inline-flex}
+    .dwrap{padding:18px 15px 50px}
+  }
+  @media (max-width:640px){
+    .topbar{padding:10px 13px;gap:9px}
+    .topbar h1{font-size:14px}
+    .topbar .sub,.topbar .filete{display:none}
+    .navbtn{padding:6px 9px;font-size:12px}
+  }
+  @media print{
+    /* fuerza paleta clara al imprimir, aunque el tema activo sea oscuro */
+    :root{--papel:#fff;--panel:#fff;--tinta:#11203A;--tinta-2:#4E6076;--linea:#ccc;
+      --azul-700:#0E4C92;--azul-500:#1D6BC4;--azul-100:#DCE8F7;--azul-050:#F0F5FC;--chip-tx:#0A3C77;
+      --sobre-azul:#fff;--warn:#6E5309;--ext-tx:#6E5309;--borde-campo:#7C879A;--sombra:none}
+    body{height:auto;overflow:visible;display:block;background:#fff;color:#000}
+    .topbar,.pane-list,.actions,.capbox,.back-m{display:none!important}
+    .app{display:block!important;height:auto;max-width:none}
+    .pane-detail{display:block;overflow:visible}
+    .cabecera,.tit{border:1px solid #ccc;box-shadow:none;break-inside:avoid}
+  }
+  :focus-visible{outline:2px solid var(--azul-500);outline-offset:2px}
+  @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <img class="logo" src="./utmach-logo.png" alt="UTMACH">
+  <div class="marca-txt">
+    <h1>Información Académica de Profesores UTMACH</h1>
+    <div class="sub" id="sub">Buscador de títulos · SENESCYT</div>
+  </div>
+  <span class="filete"></span>
+  <a class="navbtn link" href="./utmach_campos_conocimiento.html">🎓 Campos del Conocimiento</a>
+  <a class="navbtn" id="adminBtn" href="/actualizar" style="display:none">↻ Actualizar</a>
+  <button class="navbtn" id="theme" title="Cambiar tema">◐ Automático</button>
+  <button class="navbtn" id="salir" style="display:none" title="Cerrar sesión">⏻ Salir</button>
+</header>
+
+<div id="gate">
+  <img src="./utmach-logo.png" alt="UTMACH">
+  <h2>Acceso restringido</h2>
+  <p id="gateMsg"></p>
+  <a class="navbtn solid" href="./utmach_campos_conocimiento.html">Iniciar sesión →</a>
+</div>
+
+<div class="app" id="app" style="display:none">
+  <aside class="pane-list">
+    <div class="lhead">
+      <div class="buscar">
+        <svg class="lupa" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Busca por nombre, cédula o título…" autofocus aria-label="Buscar profesor">
+        <kbd>/</kbd>
+      </div>
+      <div class="filtros">
+        <select class="f" id="fTipo" aria-label="Filtrar por origen"><option value="">Nacional y extranjero</option><option>Nacional</option><option>Extranjero</option></select>
+        <select class="f" id="fNivel" aria-label="Filtrar por nivel"><option value="">Todos los niveles</option><option>Doctorado (PhD)</option><option>Maestría</option><option>Especialidad</option><option>Diplomado</option><option>Tercer nivel</option><option>Tecnológico</option></select>
+      </div>
+      <div class="count" id="count"></div>
+    </div>
+    <div class="list" id="list"></div>
+    <footer id="foot"></footer>
+  </aside>
+  <section class="pane-detail" id="detail"></section>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="datos-senescyt.js"></script>
+<script src="data.js"></script>
+<script>
+let DATA = [], byCed = new Map(), filtered = [], selected = null;
+const b64d = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+const $ = s => document.querySelector(s);
+const sa = s => (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+let SERVER = false;
+fetch('/api/ping').then(r => { if (r.ok){ SERVER = true; $('#adminBtn').style.display = ''; if(selected!=null) renderDetail(); } }).catch(() => {});
+
+let tokens = [], fTipo = '', fNivel = '';
+
+function highlight(name){
+  if(!tokens.length) return esc(name);
+  return name.split(/(\s+)/).map(w => {
+    const n = sa(w);
+    return tokens.some(t => t && n.startsWith(t)) ? `<mark>${esc(w)}</mark>` : esc(w);
+  }).join('');
+}
+function matchP(p){
+  // tipo y nivel se combinan sobre el MISMO título (p. ej. "doctorado nacional"),
+  // no de forma independiente.
+  if(fTipo || fNivel){
+    if(!p.t.some(t => (!fTipo || t.tp === fTipo) && (!fNivel || t.nv === fNivel))) return false;
+  }
+  for(const tk of tokens) if(!p.s.includes(tk)) return false;
+  return true;
+}
+function levelBadge(nv){
+  return `<span class="badge">${esc(nv||'—')}</span>`;
+}
+
+/* ---------- Lista (rail izquierdo) ---------- */
+function itemHTML(p){
+  const sel = p.c===selected;
+  return `<div class="pitem${sel?' sel':''}" data-c="${p.c}" role="button" tabindex="${sel?'0':'-1'}"${sel?' aria-current="true"':''}>
+    <div class="nm">${highlight(p.n)}</div>
+    <div class="sub2">
+      <span class="ced">${esc(p.c)}</span>
+      <span class="cnt">· ${p.t.length} título${p.t.length!==1?'s':''}</span>
+      ${levelBadge(p.mx)}
+    </div>
+  </div>`;
+}
+function renderList(){
+  filtered = DATA.filter(matchP);
+  $('#count').innerHTML = `<b>${filtered.length}</b> de ${DATA.length} profesores`;
+  const L = $('#list');
+  if(!filtered.length){
+    const msg = DATA.length===0 ? 'Aún no hay profesores cargados.'
+      : `Sin resultados${$('#q').value?` para «${esc($('#q').value)}»`:''}.`;
+    L.innerHTML = `<div class="empty2">${msg}</div>`; return;
+  }
+  L.innerHTML = filtered.map(itemHTML).join('');
+  if(selected==null){ const f = L.firstElementChild; if(f) f.tabIndex = 0; }  // entrada por teclado sin selección
+}
+
+/* ---------- Detalle (panel derecho) ---------- */
+function emptyState(){
+  return `<div class="dempty">
+    <img src="./utmach-logo.png" alt="UTMACH">
+    <h3>Selecciona un profesor</h3>
+    <p>Busca por nombre, cédula o título y elige a alguien de la lista.<br>Verás todos sus títulos registrados en SENESCYT, listos para copiar o imprimir.</p>
+  </div>`;
+}
+function detailHTML(p){
+  const tits = p.t.map(t => `<div class="tit">
+      <div class="t">${esc(t.ti)}</div>
+      <div class="in">${esc(t.in)||'—'}</div>
+      <div class="bd">
+        <span class="badge ${t.tp==='Extranjero'?'b-ext':''}">${esc(t.tp||'—')}</span>
+        <span class="badge">${esc(t.nv)}</span>
+        ${t.ar?`<span class="mt">${esc(t.ar)}</span>`:''}
+        ${t.fr?`<span class="mt">· ${esc(t.fr)}</span>`:''}
+        ${t.nr?`<span class="mt">· Reg. ${esc(t.nr)}</span>`:''}
+      </div>
+      ${t.ob?`<div class="ob">${esc(t.ob)}</div>`:''}
+    </div>`).join('');
+  const mxBadge = `<span class="badge destacado">${esc(p.mx||'—')}</span>`;
+  return `<div class="dwrap">
+    <button class="back-m" data-back>← Volver a la lista</button>
+    <div class="cabecera">
+      <div class="cab-top"><h2>${highlight(p.n)}</h2>${mxBadge}</div>
+      <div class="datos">
+        <span class="ced-chip">${esc(p.c)}</span>
+        ${p.g?`<span>${esc(p.g)}</span>`:''}
+        ${p.na?`<span>${esc(p.na)}</span>`:''}
+        <span>Máximo grado: <b>${esc(p.mx||'—')}</b></span>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="btn prim" data-copy="${p.c}">⧉ Copiar información</button>
+      <button class="btn" data-print="${p.c}">⎙ Imprimir / PDF</button>
+      <button class="btn" data-link="${p.c}">🔗 Enlace</button>
+      ${SERVER ? `<button class="btn" data-refetch="${p.c}">↻ Actualizar desde SENESCYT</button>` : ''}
+    </div>
+    <div class="capbox" id="cap-${p.c}"></div>
+    <h3 class="sech"><span class="num">${p.t.length}</span> Título${p.t.length!==1?'s':''} registrado${p.t.length!==1?'s':''} en SENESCYT</h3>
+    ${tits || '<p style="color:var(--tinta-2)">Sin títulos registrados.</p>'}
+  </div>`;
+}
+function renderDetail(){
+  const p = selected!=null ? byCed.get(selected) : null;
+  $('#detail').innerHTML = p ? detailHTML(p) : emptyState();
+}
+
+function select(c){
+  selected = c;
+  const url = new URL(location); url.searchParams.set('c', c); history.replaceState(null,'',url);
+  // intercambio solo la clase/estado (no reconstruyo los 318 ítems): sin parpadeo ni salto de scroll
+  const prev = document.querySelector('.pitem.sel');
+  if(prev){ prev.classList.remove('sel'); prev.tabIndex = -1; prev.removeAttribute('aria-current'); }
+  const el = document.querySelector(`.pitem[data-c="${c}"]`);
+  if(el){ el.classList.add('sel'); el.tabIndex = 0; el.setAttribute('aria-current','true'); }
+  renderDetail();
+  $('#app').classList.add('show-detail');
+  el?.scrollIntoView({block:'nearest'});
+  if(matchMedia('(max-width:900px)').matches) $('#detail').querySelector('[data-back]')?.focus();
+  else el?.focus();
+  $('#detail').scrollTop = 0;
+}
+function move(dir){
+  if(!filtered.length) return;
+  const fromSearch = document.activeElement === $('#q');
+  let i = filtered.findIndex(p => p.c === selected);
+  i = i < 0 ? (dir>0?0:filtered.length-1) : Math.min(filtered.length-1, Math.max(0, i+dir));
+  select(filtered[i].c);
+  if(fromSearch) $('#q').focus();   // navegar con flechas desde la búsqueda no roba el foco del input
+}
+
+function plain(p){
+  const L = [];
+  L.push(`${p.n}  (cédula ${p.c})  ·  ${p.g} · ${p.na}`);
+  L.push(`Máximo grado: ${p.mx}`);
+  L.push(`Títulos registrados en SENESCYT (${p.t.length}):`);
+  p.t.forEach((t,i)=>{
+    let line = `${i+1}. ${t.ti} — ${t.in} (${t.tp})`;
+    const ex = [];
+    if(t.ar) ex.push(`Área: ${t.ar}`);
+    if(t.nr) ex.push(`Registro: ${t.nr}`);
+    if(t.fr) ex.push(t.fr);
+    if(ex.length) line += `  [${ex.join(' · ')}]`;
+    L.push(line);
+    if(t.ob) L.push(`   Obs.: ${t.ob}`);
+  });
+  L.push(`Fuente: SENESCYT.`);
+  return L.join('\n');
+}
+let toastT;
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('on'); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('on'),1600); }
+
+/* ---------- Interacción ---------- */
+$('#list').addEventListener('click', e => {
+  const it = e.target.closest('.pitem');
+  if(it) select(it.dataset.c);
+});
+$('#list').addEventListener('keydown', e => {
+  if((e.key==='Enter'||e.key===' ') && e.target.classList.contains('pitem')){ e.preventDefault(); select(e.target.dataset.c); }
+});
+$('#detail').addEventListener('click', e => {
+  if(e.target.closest('[data-back]')){ $('#app').classList.remove('show-detail'); document.querySelector('.pitem.sel')?.focus(); return; }
+  const rf = e.target.closest('[data-refetch]');
+  if(rf){ startRefetch(rf.dataset.refetch); return; }
+  const ok = e.target.closest('[data-capok]');
+  if(ok){ submitCaptcha(ok.dataset.capok); return; }
+  const cx = e.target.closest('[data-capcancel]');
+  if(cx){ const b=document.getElementById('cap-'+cx.dataset.capcancel); if(b) b.innerHTML=''; return; }
+  const cp = e.target.closest('[data-copy]');
+  if(cp){ navigator.clipboard.writeText(plain(byCed.get(cp.dataset.copy))).then(()=>toast('Información copiada al portapapeles')); return; }
+  const pr = e.target.closest('[data-print]');
+  if(pr){ window.print(); return; }
+  const lk = e.target.closest('[data-link]');
+  if(lk){ const url = location.origin+location.pathname+'?c='+lk.dataset.link;
+    navigator.clipboard.writeText(url).then(()=>toast('Enlace copiado')); return; }
+});
+
+/* ---- Actualizar UN profesor desde SENESCYT (captcha inline) ---- */
+async function startRefetch(c){
+  const box = document.getElementById('cap-'+c);
+  if(!box) return;
+  box.innerHTML = '<div class="panel"><span class="msg">Cargando captcha de SENESCYT…</span></div>';
+  try{
+    const d = await (await fetch('/api/refetch', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({cedula:c})})).json();
+    const card = d.card;
+    if(!card || !card.captcha){ box.innerHTML = '<div class="panel"><span class="msg"><span class="err">No se pudo iniciar la consulta.</span></span></div>'; return; }
+    renderCap(c, card.token, card.captcha);
+  }catch(e){ box.innerHTML = '<div class="panel"><span class="msg"><span class="err">Error: '+esc(e.message)+'</span></span></div>'; }
+}
+function renderCap(c, token, captcha, msg){
+  const box = document.getElementById('cap-'+c);
+  if(!box) return;
+  box.innerHTML = `<div class="panel">
+    <img src="${captcha}" alt="captcha">
+    <input class="capin" data-token="${token}" placeholder="captcha" autocomplete="off" spellcheck="false" aria-label="Texto del captcha">
+    <button class="btn prim" data-capok="${c}">Confirmar</button>
+    <button class="btn" data-capcancel="${c}" title="Cancelar" aria-label="Cancelar">✕</button>
+    <span class="msg">${esc(msg||'Escribe el captcha para traer sus títulos actualizados.')}</span>
+  </div>`;
+  const inp = box.querySelector('.capin');
+  inp.focus();
+  inp.addEventListener('keydown', e => { if(e.key==='Enter'){ e.preventDefault(); submitCaptcha(c); } });
+}
+async function submitCaptcha(c){
+  const box = document.getElementById('cap-'+c);
+  const inp = box && box.querySelector('.capin');
+  if(!inp) return;
+  const token = inp.dataset.token, val = inp.value.trim();
+  if(!val) return;
+  box.querySelector('.msg').textContent = 'Consultando SENESCYT…';
+  try{
+    const d = await (await fetch('/api/submit_one', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({token, captcha:val})})).json();
+    if(d.status === 'retry'){ renderCap(c, token, d.captcha, 'Captcha incorrecto, reintenta.'); return; }
+    if(d.status === 'error' || d.status === 'expirado'){ box.querySelector('.msg').innerHTML = '<span class="err">Error: '+esc(d.detalle||d.status)+'</span>'; return; }
+    const pj = await (await fetch('/api/persona/'+encodeURIComponent(c))).json();
+    if(pj.persona){
+      const i = DATA.findIndex(x => x.c === c);
+      if(i >= 0) DATA[i] = pj.persona; else DATA.push(pj.persona);
+      byCed.set(c, pj.persona);
+      renderList(); renderDetail();
+      toast('✓ Títulos actualizados desde SENESCYT');
+    }else{
+      box.querySelector('.msg').textContent = 'Consulta hecha (sin títulos registrados para esa cédula).';
+    }
+  }catch(e){ box.querySelector('.msg').innerHTML = '<span class="err">Error: '+esc(e.message)+'</span>'; }
+}
+
+/* ---------- Búsqueda / filtros / teclado ---------- */
+const debounce = (fn,ms)=>{let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>fn(...a),ms)}};
+$('#q').addEventListener('input', debounce(e=>{ tokens = sa(e.target.value).split(/\s+/).filter(Boolean); renderList(); }, 110));
+$('#fTipo').addEventListener('change', e=>{fTipo=e.target.value;renderList()});
+$('#fNivel').addEventListener('change', e=>{fNivel=e.target.value;renderList()});
+document.addEventListener('keydown', e=>{
+  const q = $('#q');
+  if(e.key==='/' && document.activeElement!==q){ e.preventDefault(); q.focus(); q.select(); return; }
+  if(e.key==='Escape'){
+    if(document.activeElement===q && q.value){ q.value=''; tokens=[]; renderList(); }
+    else if($('#app').classList.contains('show-detail')){ $('#app').classList.remove('show-detail'); }
+    return;
+  }
+  if(e.key==='ArrowDown' || e.key==='ArrowUp'){
+    const a = document.activeElement;
+    if(a && a.tagName==='INPUT' && a!==q) return;
+    if(a && a.tagName==='SELECT') return;
+    e.preventDefault(); move(e.key==='ArrowDown'?1:-1);
+  }
+});
+
+/* ---------- Tema tri-estado (Automático / Claro / Oscuro), como Campos ---------- */
+const themeBtn = $('#theme');
+const TL = {auto:'◐ Automático', light:'☀︎ Claro', dark:'☾ Oscuro'};
+const TNEXT = {auto:'light', light:'dark', dark:'auto'};
+function applyTheme(mode){
+  if(mode==='auto') document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.setAttribute('data-theme', mode);
+  localStorage.setItem('bt-theme', mode);
+  themeBtn.textContent = TL[mode];
+}
+themeBtn.addEventListener('click', ()=> applyTheme(TNEXT[localStorage.getItem('bt-theme') || 'auto']));
+applyTheme(localStorage.getItem('bt-theme') || 'auto');
+$('#salir').addEventListener('click', ()=>{ localStorage.removeItem('utmach-sesion'); location.reload(); });
+
+/* ---------- Carga de datos (claro local / cifrado con sesión compartida) ---------- */
+async function obtenerDatos(){
+  const v = localStorage.getItem('utmach-sesion');
+  if(!v) return { gate: 'Inicia sesión en «Campos del Conocimiento» para ver los títulos SENESCYT.' };
+  if(window.SEN){
+    try{
+      const key = await crypto.subtle.importKey('raw', b64d(v), {name:'AES-GCM'}, false, ['decrypt']);
+      const plano = await crypto.subtle.decrypt({name:'AES-GCM', iv:b64d(window.SEN.iv)}, key, b64d(window.SEN.p));
+      const stream = new Blob([plano]).stream().pipeThrough(new DecompressionStream('gzip'));
+      return JSON.parse(await new Response(stream).text());
+    }catch(e){ return { gate: 'Tu sesión expiró o no es válida. Vuelve a iniciar sesión.' }; }
+  }
+  if(window.DATA) return { DATA: window.DATA, META: window.META };
+  return { gate: 'No hay datos disponibles.' };
+}
+function mostrarGate(msg){
+  $('#gate').style.display = 'flex';
+  $('#gateMsg').textContent = msg;
+  $('#app').style.display = 'none';
+  $('#salir').style.display = 'none';
+}
+async function arrancar(){
+  const r = await obtenerDatos();
+  if(r.gate){ mostrarGate(r.gate); return; }
+  $('#gate').style.display = 'none';
+  $('#app').style.display = 'grid';
+  $('#salir').style.display = '';
+  DATA = r.DATA || []; byCed = new Map(DATA.map(p => [p.c, p]));
+  const META = r.META || {};
+  $('#sub').textContent = `Buscador de títulos · SENESCYT · ${META.n||DATA.length} profesores · ${META.titulos||0} títulos`;
+  $('#foot').innerHTML = `Fuente: registros de títulos de la <b>SENESCYT</b>.<br>Datos informativos · verificación oficial en el portal SENESCYT.`;
+  renderList();
+  const c0 = new URLSearchParams(location.search).get('c');
+  if(c0 && byCed.has(c0)) select(c0); else renderDetail();
+}
+arrancar();
+</script>
+</body>
+</html>

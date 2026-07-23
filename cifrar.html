@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./utmach-logo.png">
+<title>Información Académica de Profesores UTMACH · Cifrar</title>
+<style>
+  :root{
+    --azul-900:#062044; --azul-700:#0E4C92; --azul-500:#1D6BC4; --azul-050:#F0F5FC;
+    --rojo-500:#C8102E; --papel:#F5F8FC; --panel:#FFFFFF; --tinta:#11203A; --tinta-2:#4E6076;
+    --linea:#D3DEEC; --sombra:0 1px 3px rgba(6,32,68,.10),0 4px 16px rgba(6,32,68,.07); --radius:14px;
+    color-scheme:light;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,system-ui,sans-serif;
+    background:var(--papel);color:var(--tinta);min-height:100vh}
+  .wrap{max-width:640px;margin:0 auto;padding:30px 18px}
+  header{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+  header img{width:44px;height:44px;border-radius:11px;background:#fff;padding:3px;box-shadow:var(--sombra);border:1px solid var(--linea)}
+  header h1{margin:0;font-size:18px}
+  header .sub{font-size:12px;color:var(--tinta-2);margin-top:2px}
+  .card{background:var(--panel);border:1px solid var(--linea);border-radius:var(--radius);box-shadow:var(--sombra);padding:22px 24px}
+  .card p{color:var(--tinta-2);font-size:14px;line-height:1.6}
+  .step{display:flex;gap:11px;margin:12px 0;font-size:13.5px;color:var(--tinta-2)}
+  .step b{color:var(--tinta)}
+  .num{flex:none;width:24px;height:24px;border-radius:50%;background:var(--azul-050);color:var(--azul-700);
+    display:grid;place-items:center;font-weight:700;font-size:12px}
+  .btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:10px;padding:12px 18px;
+    font-size:14px;font-weight:600;cursor:pointer;background:linear-gradient(135deg,var(--azul-700),var(--azul-500));color:#fff}
+  .btn:disabled{opacity:.5;cursor:default}
+  .estado{margin-top:16px;font-size:13.5px;padding:12px 14px;border-radius:10px;display:none}
+  .estado.ok{display:block;background:rgba(14,122,79,.10);color:#0E7A4F;border:1px solid rgba(14,122,79,.3)}
+  .estado.err{display:block;background:rgba(200,16,46,.08);color:var(--rojo-500);border:1px solid rgba(200,16,46,.3)}
+  a{color:var(--azul-700)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="./utmach-logo.png" alt="UTMACH">
+    <div><h1>Información Académica de Profesores UTMACH</h1><div class="sub">Cifrar datos SENESCYT para publicar</div></div>
+  </header>
+  <div class="card">
+    <p>Cifra los datos del buscador con <b>tu sesión actual</b> (la misma clave de tu login de
+    Campos del Conocimiento), para poder publicarlos en un sitio <b>público</b> sin exponer las cédulas.
+    Tu contraseña no se maneja aquí — se usa la clave que tu login ya dejó en el navegador.</p>
+
+    <div class="step"><span class="num">1</span><span>Inicia sesión en <a href="./utmach_campos_conocimiento.html"><b>Campos del Conocimiento</b></a> (en esta misma máquina/navegador).</span></div>
+    <div class="step"><span class="num">2</span><span>Vuelve aquí y pulsa <b>Cifrar y descargar</b>. Se genera <code>datos-senescyt.js</code>.</span></div>
+    <div class="step"><span class="num">3</span><span>Coloca ese archivo en el proyecto y despliega. El buscador lo descifrará tras el login.</span></div>
+
+    <div style="margin-top:18px"><button class="btn" id="cifrar">🔒 Cifrar y descargar datos-senescyt.js</button></div>
+    <div class="estado" id="estado"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script>
+const LS = "utmach-sesion";
+const b64d = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+const b64e = b => btoa(String.fromCharCode(...new Uint8Array(b)));
+const est = $ => document.getElementById("estado");
+function estado(msg, err){ const e=est(); e.textContent=msg; e.className="estado "+(err?"err":"ok"); }
+
+async function gzip(str){
+  const s = new Blob([new TextEncoder().encode(str)]).stream().pipeThrough(new CompressionStream("gzip"));
+  return new Uint8Array(await new Response(s).arrayBuffer());
+}
+async function sesionKey(){
+  const v = localStorage.getItem(LS);
+  if(!v) return null;
+  return crypto.subtle.importKey("raw", b64d(v), {name:"AES-GCM"}, false, ["encrypt"]);
+}
+
+document.getElementById("cifrar").addEventListener("click", async () => {
+  try{
+    const key = await sesionKey();
+    if(!key){ estado("No hay sesión activa. Inicia sesión primero en «Campos del Conocimiento» y vuelve.", true); return; }
+    if(!window.DATA){ estado("No se encontró data.js. Ejecuta el proyecto con server.py.", true); return; }
+    const plano = await gzip(JSON.stringify({ DATA: window.DATA, META: window.META }));
+    const iv = crypto.getRandomValues(new Uint8Array(12));
+    const ct = await crypto.subtle.encrypt({ name:"AES-GCM", iv }, key, plano);
+    const out = `window.SEN={p:"${b64e(ct)}",iv:"${b64e(iv)}"};\n`;
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([out], { type:"application/javascript" }));
+    a.download = "datos-senescyt.js";
+    a.click();
+    estado(`✓ datos-senescyt.js generado (${Math.round(out.length/1024)} KB, ${window.DATA.length} profesores). Colócalo en el proyecto y despliega.`);
+  }catch(e){ estado("Error al cifrar: " + e.message, true); }
+});
+</script>
+</body>
+</html>

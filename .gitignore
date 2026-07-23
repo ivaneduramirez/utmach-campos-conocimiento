@@ -1,0 +1,32 @@
+# ─────────────────────────────────────────────────────────────
+#  🔒 SECRETOS — NUNCA subir a GitHub
+# ─────────────────────────────────────────────────────────────
+CLAVE-2FA.txt
+qr-google-authenticator.png
+CONFIGURAR-2FA.md
+
+# ─────────────────────────────────────────────────────────────
+#  Datos personales EN CLARO (cédulas/nombres). El despliegue
+#  público debe usar el payload CIFRADO, no estos archivos.
+# ─────────────────────────────────────────────────────────────
+titulos.json
+data.js
+cedulas.txt
+nombres.txt
+sin_titulos.txt
+
+# ─────────────────────────────────────────────────────────────
+#  Fuentes pesadas / de trabajo (quedan solo locales)
+# ─────────────────────────────────────────────────────────────
+sources/
+json/
+debug_html/
+
+# ─────────────────────────────────────────────────────────────
+#  Entorno y artefactos
+# ─────────────────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.pyc
+*.bak
+.DS_Store
