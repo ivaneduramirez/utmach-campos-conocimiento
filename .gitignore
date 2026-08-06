@@ -11,7 +11,13 @@ CONFIGURAR-2FA.md
 # ─────────────────────────────────────────────────────────────
 titulos.json
 data.js
+campos-nuevo.js
+payload-campos.txt
+*.bak
+*.old-*
 cedulas.txt
+cedulas*.txt
+docentes*.json
 nombres.txt
 sin_titulos.txt
 
@@ -19,8 +25,13 @@ sin_titulos.txt
 #  Fuentes pesadas / de trabajo (quedan solo locales)
 # ─────────────────────────────────────────────────────────────
 sources/
-json/
 debug_html/
+
+# json/: contiene el consolidado con datos personales. Se publican solo el criterio
+# de clasificación y el mapa título->campo, que no contienen datos de personas.
+json/*
+!json/CRITERIOS_CLASIFICACION_CINE_RANT.md
+!json/clasificacion_titulos_nuevos.json
 
 # ─────────────────────────────────────────────────────────────
 #  Entorno y artefactos
@@ -29,4 +40,5 @@ debug_html/
 __pycache__/
 *.pyc
 *.bak
+*.old-*
 .DS_Store

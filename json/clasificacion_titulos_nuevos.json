@@ -1,0 +1,1962 @@
+[
+ {
+  "titulo": "ABOGADO DE LOS TRIBUNALES DE JUSTICIA DE LA REPUBLICA",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho: 04 en ambas taxonomias."
+ },
+ {
+  "titulo": "DOCTOR A DENTRO DEL PROGRAMA DE DOCTORADO EN PSICOLOGIA SALUD Y CALIDAD DE VIDA",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "media",
+  "razon": "Doctorado en psicologia (de la salud), no clinica; psicologia general -> 03 en ambas."
+ },
+ {
+  "titulo": "DOCTORA EN CIENCIAS DE LA EDUCACION",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Doctorado del dominio educacion -> 01 en ambas."
+ },
+ {
+  "titulo": "ESPECIALISTA DE PRIMER GRADO EN UROLOGIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica clinica -> 09."
+ },
+ {
+  "titulo": "ESPECIALISTA EN DISENO Y ANIMACION WEB",
+  "cine": "02",
+  "rant": "02",
+  "confianza": "media",
+  "razon": "Diseno grafico/multimedia y animacion -> artes; el enfasis es de diseno, no de desarrollo de software."
+ },
+ {
+  "titulo": "ESPECIALISTA EN PEDIATRIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica clinica -> 09."
+ },
+ {
+  "titulo": "INGENIERO A CIVIL",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Ingenieria civil/construccion -> 07."
+ },
+ {
+  "titulo": "INGENIERO EN MARKETING Y PUBLICIDAD",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Marketing y publicidad -> administracion de empresas, 04."
+ },
+ {
+  "titulo": "LICENCIADA EN CIENCIAS DE LA EDUCACION ESPECIALIZACION CULTURA FISICA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente en ciencias de la educacion (mencion cultura fisica) -> 01 en ambas."
+ },
+ {
+  "titulo": "LICENCIADA EN TECNOLOGIAS DE ESTIMULACION TEMPRANA EN SALUD",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Terapia/tecnologia en salud -> 09."
+ },
+ {
+  "titulo": "LICENCIADO EN EDUCACION ESPECIALIDAD LENGUA INGLESA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente aunque la especialidad sea idiomas -> 01 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN ACUICULTURA",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Acuicultura -> 08 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN CIENCIAS DE LA EDUCACION MENCION GERENCIA EDUCATIVA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Ciencias de la educacion / gestion educativa -> 01."
+ },
+ {
+  "titulo": "MAGISTER EN CONTABILIDAD Y FINANZAS",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Contabilidad y finanzas -> 04 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN DERECHO PENAL MENCION EN DERECHO PROCESAL PENAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho -> 04 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN EDUCACION CON MENCION EN INNOVACION EDUCATIVA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Maestria en educacion -> 01."
+ },
+ {
+  "titulo": "MAGISTER EN EDUCACION MENCION EN PEDAGOGIA EN ENTORNOS DIGITALES",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Maestria en educacion/pedagogia, aunque el medio sea digital -> 01."
+ },
+ {
+  "titulo": "MAGISTER EN GESTION DE LA CALIDAD Y AUDITORIA EN SALUD",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "media",
+  "razon": "Gestion y auditoria aplicadas al sector salud (salud publica/administracion sanitaria) -> 09; no es auditoria contable."
+ },
+ {
+  "titulo": "MAGISTER EN INTERCONECTIVIDAD DE REDES",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "alta",
+  "razon": "Redes de computadoras -> TIC, 06."
+ },
+ {
+  "titulo": "MAGISTER EN ORIENTACION EDUCATIVA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Orientacion educativa/psicopedagogia -> 01 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN REPRODUCCION ANIMAL",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Produccion pecuaria/veterinaria -> 08."
+ },
+ {
+  "titulo": "MAGISTER EN TRABAJO SOCIAL MENCION EN PROYECTOS SOCIALES",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Trabajo social -> 09 en ambas."
+ },
+ {
+  "titulo": "MASTER OF SCIENCE IN ENGINNERING",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "media",
+  "razon": "Maestria en ingenieria sin rama especificada; campo amplio de ingenieria -> 07."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN DERECHO PENAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho -> 04 en ambas."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN INGENIERIA MATEMATICA Y COMPUTACION",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "baja",
+  "razon": "Matematica aplicada con componente computacional; predomina matematicas -> 05, aunque podria defenderse 06."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN PSICOLOGIA JURIDICA Y FORENSE",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "media",
+  "razon": "Psicologia aplicada al ambito juridico, no clinica -> 03 en ambas."
+ },
+ {
+  "titulo": "MESTRE EM CIENCIAS EM TECNOLOGIA DE PROCESOS QUIMICOS Y BIOQUIMICOS",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Tecnologia/ingenieria de procesos quimicos -> 07."
+ },
+ {
+  "titulo": "TECNICO SUPERIOR EN ANALISIS DE SISTEMAS",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "alta",
+  "razon": "Analisis de sistemas informaticos -> TIC, 06."
+ },
+ {
+  "titulo": "ABOGADO DE LOS TRIBUNALES Y JUZGADOS DE LA REPUBLICA",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Titulo de Derecho; el campo 04 incluye derecho en ambas taxonomias."
+ },
+ {
+  "titulo": "DOCTOR DENTRO DEL PROGRAMA DE DOCTORADO EN ECONOMIA Y EMPRESA",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "media",
+  "razon": "Doctorado mixto economia-empresa; se prioriza Economia (nucleo del programa) que va a 03 en ambas; alternativa plausible 04."
+ },
+ {
+  "titulo": "DOCTORA EN EMPRESA ECONOMIA Y SOCIEDAD",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "media",
+  "razon": "El nucleo es Empresa (administracion) -> 04; componentes de economia y sociedad son secundarios."
+ },
+ {
+  "titulo": "ESPECIALISTA EN ADMINISTRACION DEL SECTOR SALUD",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "media",
+  "razon": "Gestion de servicios de salud: dominio sanitario (salud publica/gestion sanitaria) -> 09; alternativa 04 por el componente administrativo."
+ },
+ {
+  "titulo": "ESPECIALISTA EN GARANTIAS JURISDICCIONALES Y REPARACION INTEGRAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho constitucional y procesal -> 04 en ambas."
+ },
+ {
+  "titulo": "ESPECIALISTA EN PROYECTOS DE DESARROLLO",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "media",
+  "razon": "Formulacion, gestion y evaluacion de proyectos = administracion -> 04; alternativa 03 si el enfoque fuera desarrollo social. [auditoria: Existe coincidencia EXACTA en el catalogo oficial RANT (titulaciones_campos_conocimiento_ces.json): \"Especialista en Proyectos de Desarrollo\", posgrado, campo amplio 03 (Ciencias sociales y del comportamiento) / campo especifico Ciencias politicas / campo detallado \"Proyectos de Desarrollo\". La regla 5 del criterio manda usar el match_rant oficial como evidencia fuerte, y aqui no es falso amigo: es literal. El catalogo confirma el patron: toda la familia \"desarrollo\" va a 03 (Especialista en Gestion de Proyectos de Desarrollo -> 03, Magister en Direccion Integrada de Proyectos de Desarrollo -> 03, Especialista en Proyectos de Desarrollo y Levantamiento de Fondos -> 03, Desarrollo Local -> 03), mientras que 04 se reserva para gestion de proyectos EMPRESARIAL sin el calificador \"de desarrollo\" (Especialista en Gestion de Proyectos -> 04, MBA mencion Proyectos -> 04). En CINE-F 2013 los estudios del desarrollo (development studies) caen en 0312 Ciencias politicas y educacion civica, por lo que CINE tambien es 03. Confianza alta.]"
+ },
+ {
+  "titulo": "INGENIERO A EN ELECTRONICA Y AUTOMATIZACION",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Ingenieria electronica y automatizacion -> 07 en ambas."
+ },
+ {
+  "titulo": "INGENIERO EN SISTEMAS COMPUTACIONALES",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "alta",
+  "razon": "Computacion/sistemas informaticos -> TIC 06 en ambas."
+ },
+ {
+  "titulo": "LICENCIADA EN CIENCIAS DE LA EDUCACION ESPECIALIZACION EDUCACION BASICA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente en ciencias de la educacion -> 01 en ambas."
+ },
+ {
+  "titulo": "LICENCIADO A EN ARTES PLASTICAS",
+  "cine": "02",
+  "rant": "02",
+  "confianza": "alta",
+  "razon": "Artes plasticas -> Artes y humanidades 02 en ambas."
+ },
+ {
+  "titulo": "LICENCIADO EN EDUCACION INTEGRAL MENCION LENGUA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente; la mencion en Lengua no cambia el dominio educativo -> 01."
+ },
+ {
+  "titulo": "MAGISTER EN ADMINISTRACION DE EMPRESAS CON MENCION EN TELECOMUNICACIONES",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "MBA; el nucleo es administracion de empresas -> 04, la mencion sectorial no altera el campo."
+ },
+ {
+  "titulo": "MAGISTER EN CIENCIAS DE LA INGENIERIA MECANICA MENCION EN SISTEMAS MECANICOS",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Ingenieria mecanica -> 07 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN DERECHO",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho -> 04 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN DERECHO PENAL Y CRIMINOLOGIA",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Nucleo juridico (derecho penal) -> 04; la criminologia se subordina al campo del derecho."
+ },
+ {
+  "titulo": "MAGISTER EN EDUCACION CON MENCION EN INVESTIGACION EDUCATIVA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Maestria en Educacion -> 01 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN ENFERMERIA CLINICO QUIRURGICO",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Enfermeria clinica -> Salud y bienestar 09 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN GESTION DE OPERACIONES",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "media",
+  "razon": "Gestion de operaciones como area de administracion -> 04; alternativa 07 si el enfoque fuera ingenieria industrial."
+ },
+ {
+  "titulo": "MAGISTER EN INVESTIGACION CLINICA FARMACOLOGICA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Investigacion clinica y farmacologia -> Salud 09 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN PEDAGOGIA DE LOS IDIOMAS NACIONALES Y EXTRANJEROS MENCION EN ENSENANZA DE INGLES",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Pedagogia/ensenanza de idiomas = formacion docente -> 01 en ambas, aunque el contenido sea de idiomas."
+ },
+ {
+  "titulo": "MAGISTER EN SALUD PUBLICA CON MENCION EN ATENCION PRIMARIA DE SALUD",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Salud publica y atencion primaria -> 09 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN URBANISMO MENCION EN PLANEACION URBANA SOSTENIBLE",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Urbanismo y planificacion urbana estan en el campo de arquitectura y construccion -> 07 en ambas."
+ },
+ {
+  "titulo": "MASTER OF SCIENCE IN GEOGRAPHICAL INFORMATION SCIENCE SYSTEMS UNIGIS MSC",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "media",
+  "razon": "Sistemas de informacion geografica: componente dominante de sistemas de informacion/computacion -> 06; alternativa 05 por el componente de ciencias de la tierra."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN DIRECCION Y ASESORAMIENTO FINANCIERO",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Finanzas y direccion financiera -> 04 en ambas."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN INGENIERIA QUIMICA",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Ingenieria quimica -> 07 en ambas (no 05, que seria quimica pura)."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN SEGURIDAD INFORMATICA",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "alta",
+  "razon": "Seguridad informatica -> TIC 06 en ambas."
+ },
+ {
+  "titulo": "PERIODISTA PROFESIONAL MENCION CULTURA",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "alta",
+  "razon": "Periodismo -> Ciencias sociales, periodismo e informacion 03; la mencion cultural no cambia el campo."
+ },
+ {
+  "titulo": "TECNICO SUPERIOR EN INFORMATICA Y COMPUTACION",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "alta",
+  "razon": "Informatica y computacion -> TIC 06 en ambas."
+ },
+ {
+  "titulo": "ADMINISTRADORA EDUCATIVA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Administracion/gestion educativa pertenece al campo de Educacion en ambas taxonomias."
+ },
+ {
+  "titulo": "DOCTOR DENTRO DEL PROGRAMA DE DOCTORADO EN QUIMICA E INGENIERIA QUIMICA",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "media",
+  "razon": "Programa mixto quimica (05) e ingenieria quimica (07); se prioriza el componente de ingenieria quimica. [auditoria: Doctorado mixto Química (05) + Ingeniería Química (07). La regla 1 manda clasificar por el dominio de contenido: el núcleo común del programa es la química, y la ingeniería química es su vertiente aplicada; además \"QUÍMICA\" encabeza la denominación, y ante ponderación equivalente CINE-F recomienda el campo que aparece primero en la clasificación (05 < 07). Por regla 7, \"DOCTOR EN...\" no médico es doctorado del dominio correspondiente, aquí ciencias naturales. Sin marcador explícito de \"Ingeniería\" como componente dominante, priorizar 07 no está sustentado en los criterios. Confianza media: es un caso limítrofe y 07 sería defendible si se acreditara que la carga curricular es mayoritariamente de ingeniería de procesos.]"
+ },
+ {
+  "titulo": "DOCTORA EN MEDICINA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Titulo medico, Salud y bienestar."
+ },
+ {
+  "titulo": "ESPECIALISTA EN BIOTECNOLOGIA BIOLOGIA MOLECULAR E INGENIERIA GENETICA",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "alta",
+  "razon": "Biologia molecular, biotecnologia y genetica son ciencias biologicas (campo 05)."
+ },
+ {
+  "titulo": "ESPECIALISTA EN GESTION PUBLICA",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Administracion publica se ubica en administracion y gestion (04)."
+ },
+ {
+  "titulo": "ESPECIALISTA EN SALUD Y SEGURIDAD OCUPACIONAL CON MENCION EN SALUD OCUPACIONAL",
+  "cine": "10",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Salud y seguridad ocupacional: CINE 1022 Servicios de higiene y salud ocupacional; RANT lo ubica en Industria y produccion (seguridad industrial)."
+ },
+ {
+  "titulo": "INGENIERO A EN GESTION EMPRESARIAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Gestion empresarial es administracion de empresas pese al nombre de ingeniero."
+ },
+ {
+  "titulo": "INGENIERO MECANICO",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Ingenieria mecanica, campo de ingenieria e industria."
+ },
+ {
+  "titulo": "LICENCIADA EN CIENCIAS DE LA EDUCACION ESPECIALIZACION LIDERAZGO EDUCATIVO",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Ciencias de la educacion con especializacion educativa."
+ },
+ {
+  "titulo": "LICENCIADO A EN CIENCIAS DE LA EDUCACION",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente/ciencias de la educacion."
+ },
+ {
+  "titulo": "LICENCIADO EN EDUCACION MENCION GEOGRAFIA Y CIENCIAS DE LA TIERRA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente en una disciplina: prevalece Educacion aunque la mencion sea de ciencias de la tierra."
+ },
+ {
+  "titulo": "MAGISTER EN ADMINISTRACION PUBLICA MENCION EN DESARROLLO INSTITUCIONAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Administracion publica y desarrollo institucional, campo de administracion."
+ },
+ {
+  "titulo": "MAGISTER EN CIENCIAS DE LA INGENIERIA MENCION INGENIERIA ESTRUCTURAL SISMICA Y GEOTECNICA",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Ingenieria estructural y geotecnica, area de construccion/ingenieria civil."
+ },
+ {
+  "titulo": "MAGISTER EN DERECHO ADMINISTRATIVO MENCION EN CONTRATACION PUBLICA",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho, incluido en administracion de empresas y derecho."
+ },
+ {
+  "titulo": "MAGISTER EN DERECHO PROCESAL PENAL Y LITIGACION ORAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho penal y procesal, campo 04."
+ },
+ {
+  "titulo": "MAGISTER EN EDUCACION DE BACHILLERATO CON MENCION EN PEDAGOGIA DE LAS CIENCIAS NATURALES",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Pedagogia de una disciplina dentro de un programa de educacion: campo Educacion."
+ },
+ {
+  "titulo": "MAGISTER EN ENFERMERIA CON MENCION EN CUIDADOS CRITICOS",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Enfermeria y cuidados criticos, salud."
+ },
+ {
+  "titulo": "MAGISTER EN GESTION DEL AGUA",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "media",
+  "razon": "Gestion/manejo de recurso natural (agua) se asimila a gestion ambiental (05); podria ser 07 si el enfoque fuera ingenieria hidraulica."
+ },
+ {
+  "titulo": "MAGISTER EN MARKETING CON MENCION EN TRANSFORMACION DIGITAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Marketing, campo de administracion y negocios."
+ },
+ {
+  "titulo": "MAGISTER EN PLANIFICACION DEL TERRITORIO",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "media",
+  "razon": "Ordenamiento territorial y urbanismo se clasifica con arquitectura y urbanismo (07); alternativa menor seria geografia (03)."
+ },
+ {
+  "titulo": "MAGISTER EN SALUD Y PROTECCION LABORAL MENCION EN SALUD OCUPACIONAL",
+  "cine": "10",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Salud ocupacional: CINE servicios de higiene y salud ocupacional (10); RANT seguridad industrial (07)."
+ },
+ {
+  "titulo": "MASTER EN AGRONOMIA PRODUCCION VEGETAL",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Agronomia y produccion agricola, campo de agricultura."
+ },
+ {
+  "titulo": "MASTER OF SCIENCE M SC IN ENVIRONMENTAL PROTECTION AND AGRICULTURAL FOOD PRODUCTION",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "media",
+  "razon": "Programa mixto: predomina produccion agroalimentaria primaria (08) sobre el componente ambiental (05)."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN DISCAPACIDAD Y DEPENDENCIA ESPECIALIDAD DE INTERVENCION PSICOLOGICA EN LA DISCAPACIDAD Y EN LA DEPENDENCIA",
+  "cine": "03",
+  "rant": "09",
+  "confianza": "media",
+  "razon": "Intervencion psicologica de perfil clinico/asistencial: CINE ubica toda la psicologia en 03; RANT lleva la psicologia clinica y la atencion a la dependencia a Salud (09)."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN INVESTIGACION E INNOVACION EN CONTEXTOS EDUCATIVOS EN LA ESPECIALIDAD EN EDUCACION ESCOLAR",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Investigacion e innovacion educativa en educacion escolar."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN SISTEMAS INTEGRADOS DE GESTION DE LA PREVENCION DE RIESGOS LABORALES LA CALIDAD EL MEDIO AMBIENTE Y LA RESPONSABILIDAD SOCIAL CORPORATIVA",
+  "cine": "10",
+  "rant": "07",
+  "confianza": "media",
+  "razon": "Nucleo en prevencion de riesgos laborales (CINE 10 / RANT 07 seguridad industrial), aunque incluye calidad y RSC (04)."
+ },
+ {
+  "titulo": "PROFESOR DE EDUCACION PREPRIMARIA NIVEL TECNICO SUPERIOR",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente de nivel inicial/preprimaria."
+ },
+ {
+  "titulo": "TECNICO SUPERIOR EN INVESTIGACION DE ACCIDENTES DE TRANSITO",
+  "cine": "10",
+  "rant": "10",
+  "confianza": "alta",
+  "razon": "Servicios de seguridad y transporte (investigacion policial de siniestros de transito), campo Servicios."
+ },
+ {
+  "titulo": "CONTADOR PUBLICO AUDITOR",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Contabilidad y auditoria -> campo 04 en ambas taxonomias."
+ },
+ {
+  "titulo": "DOCTOR DENTRO DEL PROGRAMA DE DOCTORADO PSICOLOGIA CLINICA Y DE LA SALUD",
+  "cine": "03",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Psicologia clinica: CINE ubica toda psicologia en 03; RANT la clinica en 09 (Salud)."
+ },
+ {
+  "titulo": "DOUTOR EM CIENCIAS EM TECNOLOGIA DE PROCESSOS QUIMICOS E BIOQUIMICOS",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Tecnologia de procesos quimicos/bioquimicos = ingenieria quimica de procesos -> 07."
+ },
+ {
+  "titulo": "ESPECIALISTA EN CIENCIAS PENALES Y CRIMINOLOGICAS",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "media",
+  "razon": "Ciencias penales es derecho -> 04; el componente criminologico podria leerse como 03, pero domina el derecho."
+ },
+ {
+  "titulo": "ESPECIALISTA EN IMAGENOLOGIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica de diagnostico por imagen -> Salud."
+ },
+ {
+  "titulo": "GRADUADA EN LOGOPEDIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Terapia del lenguaje, profesion sanitaria de rehabilitacion -> 09."
+ },
+ {
+  "titulo": "INGENIERO A EN TELECOMUNICACIONES",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "media",
+  "razon": "Telecomunicaciones se ubica en electronica y automatizacion (071) de CINE-F 2013; podria confundirse con TIC (06) por redes."
+ },
+ {
+  "titulo": "INGENIERO MECANICO ESPECIALIDAD MECANICA AUTOMOTRIZ",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Ingenieria mecanica/automotriz -> Ingenieria, industria y construccion."
+ },
+ {
+  "titulo": "LICENCIADA EN CIENCIAS DE LA EDUCACION MENCION CULTURA FISICA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente (ciencias de la educacion) -> 01 en ambas aunque la mencion sea cultura fisica."
+ },
+ {
+  "titulo": "LICENCIADO A EN CIENCIAS DE LA EDUCACION BASICA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente para educacion basica -> 01."
+ },
+ {
+  "titulo": "LICENCIADO EN LENGUA INGLESA",
+  "cine": "02",
+  "rant": "02",
+  "confianza": "alta",
+  "razon": "Idiomas y lenguas (sin componente pedagogico explicito) -> Artes y humanidades."
+ },
+ {
+  "titulo": "MAGISTER EN AGRONEGOCIOS SOSTENIBLES",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "media",
+  "razon": "Dominio agropecuario con enfoque de gestion de la cadena agricola -> 08; alternativa plausible 04 por el componente de negocios. [auditoria: Existe coincidencia EXACTA en la nomenclatura RANT/CES (json/titulaciones_campos_conocimiento_ces.json): \"Magíster en Agronegocios Sostenibles\" -> campo amplio 04 Administración de empresas y derecho / específico \"Educación comercial y administración\" / detallado \"Administración\" / carrera \"Agronegocios Sostenibles\". La regla 5 del criterio obliga a usar ese match como evidencia fuerte y no es falso amigo (título idéntico). Lo mismo ocurre con \"Magíster en Gestión de Agroempresas y Agronegocios\" y \"Magíster en Negocios Agropecuarios\" (04); el 08 solo aplica cuando el núcleo es producción agropecuaria (\"Magíster en Agropecuaria con mención en Agronegocios\"). Además, el propio registro trae area_senescyt=\"ADMINISTRACION\" (pista débil concordante) y el dataset ya clasifica la asignatura \"AGRONEGOCIOS\" como 04/04. El criterio 08 cubre producción agrícola/pecuaria, no la gestión empresarial de cadenas agroalimentarias; el patrón \"no todo lo agro es 08\" ya está explícito para agroindustria (07). CINE 2013 coincide: contenido de administración y comercio -> 041 -> 04. Confianza alta.]"
+ },
+ {
+  "titulo": "MAGISTER EN CIENCIAS DE LA INGENIERIA PARA LA GESTION DE LOS RECURSOS HIDRICOS",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "media",
+  "razon": "Ciencias de la ingenieria aplicadas a recursos hidricos -> 07; si se leyera como manejo de recursos naturales seria 05."
+ },
+ {
+  "titulo": "MAGISTER EN DERECHO CONSTITUCIONAL MENCION EN DERECHO PROCESAL CONSTITUCIONAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho -> 04 en ambas taxonomias."
+ },
+ {
+  "titulo": "MAGISTER EN DERECHO TRIBUTARIO",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho tributario -> 04 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN EDUCACION EN CIENCIAS EXACTAS Y NATURALES",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Maestria en educacion/ensenanza de una disciplina -> 01 aunque el contenido sea de ciencias."
+ },
+ {
+  "titulo": "MAGISTER EN ENFERMERIA CON MENCION EN ENFERMERIA DE CUIDADOS CRITICOS",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Enfermeria clinica -> Salud y bienestar."
+ },
+ {
+  "titulo": "MAGISTER EN GESTION DEL CUIDADO",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Gestion del cuidado es titulacion propia de enfermeria -> 09."
+ },
+ {
+  "titulo": "MAGISTER EN MATEMATICA",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "alta",
+  "razon": "Matematica pura -> Ciencias naturales, matematicas y estadistica."
+ },
+ {
+  "titulo": "MAGISTER EN PRODUCCION Y NUTRICION ANIMAL",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Produccion pecuaria y nutricion animal -> Agricultura y veterinaria."
+ },
+ {
+  "titulo": "MAGISTER EN SEGURIDAD INDUSTRIAL MENCION EN PREVENCION DE RIESGOS LABORALES",
+  "cine": "10",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Seguridad y salud ocupacional: CINE 10 (1022); RANT la ubica en Industria y produccion (07)."
+ },
+ {
+  "titulo": "MASTER EN CIENCIAS DE LA EDUCACION SUPERIOR",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Ciencias de la educacion (docencia universitaria) -> 01."
+ },
+ {
+  "titulo": "MASTER OF SCIENCE MSC IN ECOLOGY ECOSYSTEMS",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "alta",
+  "razon": "Ecologia y ecosistemas = ciencias del medio ambiente -> 05 en ambas."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN DISENO Y GESTION DE PROYECTOS TECNOLOGICOS",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "baja",
+  "razon": "Proyectos tecnologicos con perfil ingenieril -> 07; alternativas plausibles 04 (gestion de proyectos) o 06 (TIC) segun el enfasis real. [auditoria: Confianza media. El nucleo semantico del titulo es \"diseno y gestion de proyectos\" (formulacion, direccion y evaluacion de proyectos), competencia propia de administracion/direccion: CINE-F 2013 ubica explicitamente \"gestion de proyectos\" en el detallado 0413 (Administracion y gestion de empresas), campo amplio 04; el RANT mantiene administracion/gestion en 04 (criterio linea 24). \"Tecnologicos\" es un adjetivo de aplicacion, no una disciplina: el titulo no nombra ninguna rama de ingenieria (quimica, civil, mecanica, electronica, industrial) ni ningun contenido TIC explicito (software, redes, sistemas, informatica), por lo que la regla 1 (clasificar por dominio de contenido) no habilita 07 ni 06. Asignar 07 supone inferir un perfil ingenieril que el texto no sustenta; seria correcto solo si la malla real demostrara predominio de contenidos tecnicos de ingenieria, y 06 solo si los proyectos fueran especificamente de TIC. Con la sola evidencia del titulo, 04 en ambas taxonomias.]"
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN INVESTIGACION QUIMICA",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "alta",
+  "razon": "Quimica como ciencia basica (investigacion) -> 05, no ingenieria quimica."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN TRANSFORMACION DIGITAL DE LA EMPRESA",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "media",
+  "razon": "Enfoque de gestion empresarial ante la digitalizacion -> 04; podria ser 06 si el contenido fuera predominantemente tecnologico."
+ },
+ {
+  "titulo": "PROFESOR DE EDUCACION PRIMARIA NIVEL TECNICO SUPERIOR",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente ('PROFESOR DE...') -> 01 en ambas."
+ },
+ {
+  "titulo": "TECNICO SUPERIOR UNIVERSITARIO EN TECNOLOGIA DE ALIMENTOS MENCION PROCESAMIENTO Y CONTROL DE CALIDAD DE ALIMENTOS",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Procesamiento de alimentos/agroindustria -> 07 en ambas (no 08)."
+ },
+ {
+  "titulo": "CONTADORA PUBLICA AUDITORA",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Contabilidad y auditoria -> Administracion de empresas y derecho en ambas taxonomias."
+ },
+ {
+  "titulo": "DOCTOR EN CIENCIAS FISIOLOGIA VEGETAL",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "media",
+  "razon": "Doctorado no medico; fisiologia vegetal es biologia (ciencias naturales), no produccion agricola."
+ },
+ {
+  "titulo": "ECONOMISTA AGROPECUARIA",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "media",
+  "razon": "El dominio es Economia (03 en ambas); lo agropecuario es solo el sector de aplicacion."
+ },
+ {
+  "titulo": "ESPECIALISTA EN CIRUGIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica clinica -> Salud y bienestar."
+ },
+ {
+  "titulo": "ESPECIALISTA EN LA ESPECIALIDAD DE PEDIATRIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica clinica -> Salud y bienestar."
+ },
+ {
+  "titulo": "INGENIERA ACUICULTORA",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Acuicultura explicitamente en Agricultura, silvicultura, pesca y veterinaria."
+ },
+ {
+  "titulo": "INGENIERO AGROINDUSTRIAL",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Agroindustria y procesamiento de alimentos -> Ingenieria, industria y construccion (no 08)."
+ },
+ {
+  "titulo": "INGENIERO PETROQUIMICO",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Ingenieria quimica/industrial de procesos -> 07 en ambas."
+ },
+ {
+  "titulo": "LICENCIADA EN CIENCIAS DE LA EDUCACION MENCION EDUCACION BASICA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente / ciencias de la educacion -> 01 en ambas."
+ },
+ {
+  "titulo": "LICENCIADO A EN ENFERMERIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Enfermeria -> Salud y bienestar en ambas."
+ },
+ {
+  "titulo": "MAESTRIA EN ADMINISTRACION DE NEGOCIOS DIGITALES",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Administracion de empresas; lo digital es medio, no dominio TIC."
+ },
+ {
+  "titulo": "MAGISTER EN ALIMENTOS",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "media",
+  "razon": "Ciencia y tecnologia de alimentos = procesamiento de alimentos -> 07; no es nutricion clinica."
+ },
+ {
+  "titulo": "MAGISTER EN CIENCIAS DEL LABORATORIO CLINICO",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Laboratorio clinico / tecnologia medica -> Salud y bienestar."
+ },
+ {
+  "titulo": "MAGISTER EN DERECHO DE DANOS",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho -> Administracion de empresas y derecho en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN DESARROLLO E INNOVACION DE ALIMENTOS",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Desarrollo de productos alimentarios = procesamiento de alimentos -> 07 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN EDUCACION ESPECIAL MENCION EN EDUCACION DE LAS PERSONAS CON DISCAPACIDAD MULTIPLE",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Educacion especial es campo de la educacion -> 01 en ambas pese al componente de discapacidad."
+ },
+ {
+  "titulo": "MAGISTER EN ENTRENAMIENTO DEPORTIVO",
+  "cine": "10",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Deporte no docente: CINE 10 (servicios/deportes); RANT ubica actividad fisica y deporte en 01."
+ },
+ {
+  "titulo": "MAGISTER EN GESTION EDUCATIVA MENCION EN ORGANIZACION DIRECCION E INNOVACION DE LOS CENTROS EDUCATIVOS",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Gestion y direccion de centros educativos es campo de educacion, no administracion generica."
+ },
+ {
+  "titulo": "MAGISTER EN MEDICINA CANINA Y FELINA",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Medicina veterinaria -> Agricultura, silvicultura, pesca y veterinaria."
+ },
+ {
+  "titulo": "MAGISTER EN PSICOLOGIA CLINICA MENCION EN PSICOTERAPIA",
+  "cine": "03",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Toda psicologia es 03 en CINE; RANT lleva psicologia clinica a Salud (09)."
+ },
+ {
+  "titulo": "MAGISTER EN SEGURIDAD INDUSTRIAL MENCION PREVENCION DE RIESGOS LABORALES",
+  "cine": "10",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Seguridad y salud ocupacional: CINE 10 (1022); RANT la ubica en Industria y produccion (07)."
+ },
+ {
+  "titulo": "MASTER EN CLINICA ESTETICA Y REPARADORA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "media",
+  "razon": "Practica clinica medico-estetica y reparadora -> 09; solo seria 10 si fuera estetica cosmetica no medica."
+ },
+ {
+  "titulo": "MASTER SCIENCES TECHNOLOGIES SANTE A FINALITE PROFESSIONNELLE MENTION SCIENCES DE L ENVIRONNEMENT TERRESTRE",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "media",
+  "razon": "La mencion (ciencias del ambiente terrestre / ciencias de la tierra) define el dominio -> 05, pese al rotulo generico 'sante'."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN EDUCACION INTERNACIONAL Y BILINGUISMO",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Educacion (bilingue) -> 01 en ambas aunque el contenido toque idiomas."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN MEDICAMENTOS SALUD Y SISTEMA SANITARIO",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Farmacia y sistemas de salud publica -> Salud y bienestar."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN ZOOTECNIA Y GESTION SOSTENIBLE GANADERIA ECOLOGIA INTEGRADA",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Zootecnia y produccion pecuaria -> Agricultura, silvicultura, pesca y veterinaria."
+ },
+ {
+  "titulo": "PROFESOR DE NIVEL MEDIO ESPECIALIZACION INGLES",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente ('PROFESOR DE...') -> 01 en ambas aunque la especializacion sea idiomas."
+ },
+ {
+  "titulo": "TECNOLOGO A SUPERIOR EN ADMINISTRACION",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Administracion de empresas -> 04 en ambas."
+ },
+ {
+  "titulo": "DIPLOMA SUPERIOR EN ATENCION PRIMARIA DE SALUD",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Atencion primaria de salud = salud publica/medicina."
+ },
+ {
+  "titulo": "DOCTOR EN ESTADISTICA MATEMATICA APLICADA",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "alta",
+  "razon": "Doctorado no medico; dominio estadistica/matematicas."
+ },
+ {
+  "titulo": "ESPECIALISTA DE PRIMER GRADO EN ANATOMIA HUMANA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad de ciencias medicas basicas."
+ },
+ {
+  "titulo": "ESPECIALISTA EN CUIDADOS INTENSIVOS PEDIATRICOS",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica clinica."
+ },
+ {
+  "titulo": "ESPECIALISTA EN MEDICINA CRITICA Y TERAPIA INTENSIVA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica clinica."
+ },
+ {
+  "titulo": "INGENIERA AGRONOMA",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Agronomia = produccion agricola."
+ },
+ {
+  "titulo": "INGENIERO AMBIENTAL",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Regla explicita: ingenieria ambiental a 07 en ambas."
+ },
+ {
+  "titulo": "LICENCIADA EN BELLAS ARTES ESPECIALIZACION ARTES PLASTICAS Y VISUALES",
+  "cine": "02",
+  "rant": "02",
+  "confianza": "alta",
+  "razon": "Artes plasticas y visuales = artes."
+ },
+ {
+  "titulo": "LICENCIADA EN CIENCIAS DE LA EDUCACION MENCION EDUCACION INICIAL Y PARVULARIA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente / ciencias de la educacion."
+ },
+ {
+  "titulo": "LICENCIADO A EN PEDAGOGIA DE LA ACTIVIDAD FISICA Y DEPORTE",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Pedagogia de X = formacion docente; deporte docente a 01 en ambas."
+ },
+ {
+  "titulo": "MAESTRIA EN CIENCIA DE DATOS APLICADA",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "alta",
+  "razon": "Ciencia de datos = TIC (computacion, bases de datos)."
+ },
+ {
+  "titulo": "MAGISTER EN ARTES CON MENCION EN TEORIA Y FILOSOFIA DEL ARTE",
+  "cine": "02",
+  "rant": "02",
+  "confianza": "alta",
+  "razon": "Artes y filosofia del arte = artes y humanidades."
+ },
+ {
+  "titulo": "MAGISTER EN CIENCIAS MENCION PRODUCCION ANIMAL",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Produccion pecuaria."
+ },
+ {
+  "titulo": "MAGISTER EN DERECHO DIGITAL CON MENCION EN INNOVACION LEGAL Y ENTORNO DIGITAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho, aunque el objeto sea el entorno digital."
+ },
+ {
+  "titulo": "MAGISTER EN DESARROLLO LOCAL MENCION EN ECONOMIA SOCIAL Y SOLIDARIA",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "media",
+  "razon": "Desarrollo local y economia social = economia/ciencias sociales; alternativa 04 descartada por no ser gestion empresarial."
+ },
+ {
+  "titulo": "MAGISTER EN EDUCACION INCLUSIVA CON MENCION EN INTERVENCION PSICOEDUCATIVA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Educacion inclusiva y psicopedagogia = educacion."
+ },
+ {
+  "titulo": "MAGISTER EN FARMACIA CLINICA Y HOSPITALARIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Farmacia clinica = salud."
+ },
+ {
+  "titulo": "MAGISTER EN GESTION Y DESARROLLO SOCIAL",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "media",
+  "razon": "Cercano a trabajo social/desarrollo comunitario (09); posible 03 si el enfoque fuera sociologico. [auditoria: Evidencia directa en /Users/ivan/DEV/utmach/campos de conocimiento/json/titulaciones_campos_conocimiento_ces.json: existe la titulación oficial \"Magíster en Gestión Social y Desarrollo\" (misma denominación con las palabras reordenadas) clasificada en campo amplio 03 - Ciencias sociales, periodismo e información, campo detallado 0312 Ciencias políticas; igual \"Magíster en Gestión del Desarrollo con mención en Gestión del Desarrollo Social\" (03/0312) y toda la familia \"Desarrollo Local\" (03). Es un match casi literal, no un falso amigo, por lo que aplica la regla 5 de los criterios. El dominio de contenido es gestión de políticas y programas de desarrollo social (ciencias políticas / estudios sociales), no atención asistencial ni salud, así que CINE también es 03. Observación relevante para el criterio general: el propio catálogo RANT/CES ubica \"Trabajo Social\" en 03 (0314 Estudios sociales y culturales) y el campo específico 092 Bienestar solo contiene \"Asistencia a adultos mayores y discapacitados\" y \"Asistencia a la infancia y servicios para jóvenes\"; esto contradice la línea del documento de criterios que afirma \"Trabajo social → 09 en ambas\" y conviene revisarla.]"
+ },
+ {
+  "titulo": "MAGISTER EN MEDICINA VETERINARIA MENCION CLINICA Y CIRUGIA DE PEQUENAS ESPECIES",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Veterinaria pertenece a 08, no a salud humana."
+ },
+ {
+  "titulo": "MAGISTER EN PSICOLOGIA JURIDICA Y FORENSE CON MENCION EN PERICIA JUDICIAL",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "media",
+  "razon": "Psicologia no clinica (juridica/forense) a 03 en ambas; el componente juridico no la traslada a 04."
+ },
+ {
+  "titulo": "MAGISTER EN SEGURIDAD Y SALUD OCUPACIONAL",
+  "cine": "10",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Regla explicita: SSO a CINE 10 y RANT 07 (seguridad industrial)."
+ },
+ {
+  "titulo": "MASTER EN DERECHO PENAL INTERNACIONAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN BIG DATA Y CIENCIA DE DATOS",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "alta",
+  "razon": "Big data y ciencia de datos = TIC."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN ENSENANZA DE INGLES COMO LENGUA EXTRANJERA MASTER S DEGREE IN TEACHING ENGLISH AS A FOREIGN LANGUAGE",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Ensenanza de X = formacion docente, prevalece sobre el dominio idiomas (02)."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN METODOLOGIA DE LA INVESTIGACION EN CIENCIAS DE LA SALUD",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "media",
+  "razon": "Metodologia con dominio explicito de salud (epidemiologia/bioestadistica), por lo que no aplica el 00 generico."
+ },
+ {
+  "titulo": "MASTER UNIVERSTARIO EN MEDICAMENTOS SALUD Y SISTEMA SANITARIO",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Medicamentos y sistemas sanitarios = farmacia/salud publica."
+ },
+ {
+  "titulo": "PROFESOR EN EDUCACION BASICA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente."
+ },
+ {
+  "titulo": "TECNOLOGO ANALISTA DE SISTEMAS",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "alta",
+  "razon": "Analisis de sistemas informaticos = TIC."
+ },
+ {
+  "titulo": "DIPLOMA SUPERIOR EN DESARROLLO LOCAL Y SALUD",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "media",
+  "razon": "Nucleo salud publica/comunitaria aplicada al territorio; alternativa plausible 03 por el componente de desarrollo local"
+ },
+ {
+  "titulo": "DOCTOR EN GESTION PUBLICA Y GOBERNABILIDAD",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "media",
+  "razon": "Doctorado no medico en administracion publica (0413 CINE); gobernabilidad podria empujar a 03"
+ },
+ {
+  "titulo": "ESPECIALISTA DE PRIMER GRADO EN DERMATOLOGIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica clinica"
+ },
+ {
+  "titulo": "ESPECIALISTA EN DERECHO PENAL CON MENCION EN TRANSITO Y TRANSPORTE TERRESTRE",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho, aunque la mencion sea de transito"
+ },
+ {
+  "titulo": "ESPECIALISTA EN MEDICINA FAMILIAR Y COMUNITARIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica"
+ },
+ {
+  "titulo": "INGENIERA DE PRODUCCION Y OPERACIONES",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "media",
+  "razon": "Ingenieria industrial/produccion; si fuera enfoque puramente gerencial seria 04"
+ },
+ {
+  "titulo": "INGENIERO ELECTRICO ESPECIALIDAD MANDOS ELECTRICOS AUTOMATIZACION DE INSTALACIONES INDUSTRIALES Y COMPLEJOS TECNOLOGICOS",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Ingenieria electrica y automatizacion industrial"
+ },
+ {
+  "titulo": "LICENCIADA EN CIENCIAS DE LA COMUNICACION SOCIAL",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "alta",
+  "razon": "Comunicacion social y periodismo"
+ },
+ {
+  "titulo": "LICENCIADA EN CIENCIAS DE LA EDUCACION MENCION PSICOLOGIA EDUCATIVA Y ORIENTACION VOCACIONAL",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente (ciencias de la educacion), regla 2"
+ },
+ {
+  "titulo": "LICENCIADO EN CIENCIAS DE LA EDUCACION MENCION ADMINISTRACION EDUCATIVA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Ciencias de la educacion; la mencion administrativa no cambia el dominio"
+ },
+ {
+  "titulo": "MAESTRIA EN CIENCIAS MENCION ORIENTACION EN SEXOLOGIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "media",
+  "razon": "Sexologia como area de salud y bienestar; alternativa 03 si el enfoque fuera psicologico-social"
+ },
+ {
+  "titulo": "MAGISTER EN BIOTECNOLOGIA AGROPECUARIA MENCION EN BIOTECNOLOGIA EN PRODUCCION VEGETAL",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Produccion agricola y pecuaria"
+ },
+ {
+  "titulo": "MAGISTER EN COMERCIO EXTERIOR CON MENCION EN GESTION TRIBUTARIA ADUANERA",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Comercio y tributacion"
+ },
+ {
+  "titulo": "MAGISTER EN DERECHO MENCION DERECHO PROCESAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho"
+ },
+ {
+  "titulo": "MAGISTER EN DESARROLLO LOCAL MENCION EN PLANIFICACION DESARROLLO Y ORDENAMIENTO TERRITORIAL",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "media",
+  "razon": "Desarrollo local y planificacion territorial como ciencias sociales/geografia; el ordenamiento territorial podria llevar a 07 (urbanismo)"
+ },
+ {
+  "titulo": "MAGISTER EN EDUCACION INFORMATICA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Educacion en/con informatica: formacion docente, regla 2"
+ },
+ {
+  "titulo": "MAGISTER EN FINANZAS MENCION EN TRIBUTACION",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Finanzas y tributacion"
+ },
+ {
+  "titulo": "MAGISTER EN INFORMATICA EDUCATIVA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "media",
+  "razon": "Aplicacion pedagogica de las TIC (dominio educativo); lectura alternativa 06 si fuera desarrollo tecnologico puro"
+ },
+ {
+  "titulo": "MAGISTER EN MEDICINA VETERINARIA MENCION EN CLINICA Y CIRUGIA DE PEQUENAS ESPECIES",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Veterinaria"
+ },
+ {
+  "titulo": "MAGISTER EN PSICOLOGIA MENCION NEUROPSICOLOGIA DEL APRENDIZAJE",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "media",
+  "razon": "Psicologia no clinica (neuropsicologia del aprendizaje); si fuera clinica RANT seria 09"
+ },
+ {
+  "titulo": "MAGISTER EN SISTEMAS DE GESTION DE CALIDAD MENCION EN SISTEMAS INTEGRADOS",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "media",
+  "razon": "Gestion de calidad/sistemas integrados (calidad-ambiente-seguridad) en procesos industriales; alternativa 04 si fuera enfoque gerencial [auditoria: Coincidencia EXACTA en el catálogo RANT (/Users/ivan/DEV/utmach/campos de conocimiento/json/titulaciones_campos_conocimiento_ces.json): \"Magíster en Sistemas de Gestión de Calidad con mención en Sistemas Integrado\" → campo amplio 04, específico \"Educación comercial y administración\", detallado \"Administración\", programa \"Sistemas de Gestión de Calidad\". El mismo catálogo confirma el patrón: \"MAE con mención en Sistemas Integrados de Gestión, Calidad, Seguridad y Ambiente\" → 04, y \"Magíster en Gestión de la Calidad\" → 04. El 07 del catálogo se reserva a titulaciones ancladas a una ingeniería o producción concreta (\"Ingeniería Industrial con mención en Sistemas Integrados de Gestión\", \"Magíster en Sistemas Integrados\" de Producción industrial), lo que NO aplica aquí: el núcleo del título es gestión organizacional de sistemas normalizados (ISO 9001/14001/45001), no proceso industrial. Regla 5 (match_rant como evidencia fuerte) y regla 1 (dominio de contenido). Confianza alta; CINE 04 por equivalencia directa con el campo 041 CINE-F 2013 que usa el propio RANT.]"
+ },
+ {
+  "titulo": "MASTER EN DIDACTICA DE LA EDUCACION SUPERIOR",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Didactica y docencia universitaria"
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN CREACION DE GUIONES AUDIOVISUALES",
+  "cine": "02",
+  "rant": "02",
+  "confianza": "alta",
+  "razon": "Artes audiovisuales y escritura de guion"
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN ESTADISTICA APLICADA",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "alta",
+  "razon": "Estadistica"
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN METODOLOGIA DE LAS CIENCIAS DEL COMPORTAMIENTO Y DE LA SALUD",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "media",
+  "razon": "Metodologia de investigacion en ciencias del comportamiento (psicologia); alternativa 05 por su fuerte carga estadistica"
+ },
+ {
+  "titulo": "MATEMATICO A",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "alta",
+  "razon": "Matematicas"
+ },
+ {
+  "titulo": "PROFESORA DE EDUCACION MEDIA ESPECIALIZACION LIDERAZGO EDUCATIVO",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente, regla 2"
+ },
+ {
+  "titulo": "TECNOLOGO EN AGROINDUSTRIAS",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Agroindustria/procesamiento de alimentos va a 07, no a 08"
+ },
+ {
+  "titulo": "DIPLOMA SUPERIOR EN GESTION Y EVALUACION DE PROYECTOS",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "media",
+  "razon": "Gestion y evaluacion de proyectos es contenido de administracion/gerencia; sin dominio tecnico especifico se ubica en Administracion de empresas."
+ },
+ {
+  "titulo": "DOCTOR PROGRAMA DE DOCTORADO EN BIOTECNOLOGIA AVANZADA",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "media",
+  "razon": "Doctorado no medico: dominio biotecnologia, ubicada en ciencias biologicas/bioquimica (0512). Podria argumentarse 07 si el enfoque fuera de procesos industriales."
+ },
+ {
+  "titulo": "ESPECIALISTA DE PRIMER GRADO EN LABORATORIO CLINICO",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad clinica de laboratorio/tecnologia medica, campo Salud y bienestar."
+ },
+ {
+  "titulo": "ESPECIALISTA EN DERECHO PENAL Y JUSTICIA INDIGENA",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho en ambas taxonomias corresponde a Administracion de empresas y derecho."
+ },
+ {
+  "titulo": "ESPECIALISTA EN NUTRICION ANIMAL AVANZADA",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Nutricion animal es produccion pecuaria/veterinaria, no salud humana; corresponde a Agricultura, silvicultura, pesca y veterinaria."
+ },
+ {
+  "titulo": "INGENIERA EN BIOTECNOLOGIA",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "media",
+  "razon": "Biotecnologia se clasifica en ciencias biologicas/bioquimica pese al titulo de ingenieria; el dominio de contenido prima sobre la denominacion."
+ },
+ {
+  "titulo": "INGENIERO EN AGROALIMENTACION",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "media",
+  "razon": "Agroalimentacion equivale a agroindustria y procesamiento de alimentos, que por criterio va a 07 y no a 08; duda menor por posible componente de produccion agricola."
+ },
+ {
+  "titulo": "LICENCIADA EN CIENCIAS DE LA EDUCACION EN LA ESPECIALIZACION DE LENGUA INGLESA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente con especializacion; la regla manda 01 aunque la especializacion (ingles) sea del campo 02."
+ },
+ {
+  "titulo": "LICENCIADA EN DISENO Y PRODUCCION AUDIOVISUAL",
+  "cine": "02",
+  "rant": "02",
+  "confianza": "alta",
+  "razon": "Diseno y audiovisuales pertenecen a Artes y humanidades."
+ },
+ {
+  "titulo": "LICENCIADO EN CIENCIAS DE LA EDUCACION MENCION INGLES",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Titulo de formacion docente; la mencion en ingles no cambia el campo."
+ },
+ {
+  "titulo": "MAESTRIA EN DOCENCIA UNIVERSITARIA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Docencia/pedagogia de nivel superior, campo Educacion."
+ },
+ {
+  "titulo": "MAGISTER EN CAMBIO CLIMATICO",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "media",
+  "razon": "Ciencias ambientales y de la tierra; equivale a gestion ambiental/recursos naturales, que va a 05 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN COMUNICACION MENCION EN COMUNICACION DIGITAL",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "alta",
+  "razon": "Comunicacion y periodismo pertenecen a Ciencias sociales, periodismo e informacion."
+ },
+ {
+  "titulo": "MAGISTER EN DERECHO MENCION EN DERECHO PROCESAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho corresponde a 04 en ambas taxonomias."
+ },
+ {
+  "titulo": "MAGISTER EN DIRECCION INTEGRADA DE PROYECTOS DE DESARROLLO",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "media",
+  "razon": "Direccion/gestion de proyectos es administracion; el calificativo 'de desarrollo' podria sugerir 03, pero el nucleo formativo es gerencial."
+ },
+ {
+  "titulo": "MAGISTER EN EDUCACION INICIAL CON MENCION EN INNOVACION EN EL DESARROLLO INFANTIL",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Educacion inicial y desarrollo infantil en contexto educativo, campo Educacion."
+ },
+ {
+  "titulo": "MAGISTER EN GERENCIA DE INSTITUCIONES DE SALUD",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "media",
+  "razon": "Gestion de servicios y sistemas de salud se ubica en Salud y bienestar por su dominio sectorial; alternativa defendible 04 por el componente administrativo."
+ },
+ {
+  "titulo": "MAGISTER EN INGENIERIA CIVIL MENCION EN ESTRUCTURAS SISMORRESISTENTES",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Ingenieria civil y construccion, campo 07 en ambas."
+ },
+ {
+  "titulo": "MAGISTER EN MINAS MENCION EN MINERALURGIA Y METALURGIA EXTRACTIVA",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Mineria, metalurgia y procesamiento de minerales pertenecen a Ingenieria, industria y construccion."
+ },
+ {
+  "titulo": "MAGISTER EN PSICOPEDAGOGIA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "La psicopedagogia esta listada explicitamente en el campo Educacion en ambas taxonomias."
+ },
+ {
+  "titulo": "MAGISTER EN SISTEMAS ELECTRICOS DE POTENCIA",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Ingenieria electrica, campo 07 en ambas."
+ },
+ {
+  "titulo": "MASTER EN EDUCACION SUPERIOR",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion sobre docencia y gestion pedagogica de la educacion superior, campo Educacion."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN CRECIMIENTO Y DESARROLLO SOSTENIBLE",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "baja",
+  "razon": "Se interpreta como economia del crecimiento y del desarrollo (03); si el programa fuera predominantemente ambiental corresponderia 05."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN GESTION DE RECURSOS HIDRICOS",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "media",
+  "razon": "Manejo de recursos naturales y ambiente va a 05 en ambas; seria 07 solo si el enfoque fuera ingenieria hidraulica/obras."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN NEUROPSICOLOGIA Y EDUCACION",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "media",
+  "razon": "Neuropsicologia aplicada al aprendizaje escolar equivale a psicopedagogia/orientacion educativa, que va a 01; si se leyera como psicologia pura seria 03."
+ },
+ {
+  "titulo": "MEDICA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Titulo medico de tercer nivel, campo Salud y bienestar."
+ },
+ {
+  "titulo": "PROFESORA EN CIENCIAS DE LA EDUCACION",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Titulo de formacion docente, campo Educacion en ambas taxonomias."
+ },
+ {
+  "titulo": "TECNOLOGO EN ELECTRICIDAD",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Electricidad como tecnologia aplicada corresponde a Ingenieria, industria y construccion."
+ },
+ {
+  "titulo": "DIPLOMA SUPERIOR EN PATOLOGIA AVIAR",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Patologia aviar es medicina veterinaria/produccion pecuaria."
+ },
+ {
+  "titulo": "DOCTORA DENTRO DEL PROGRAMA DE DOCTORADO EN INGENIERIA CIVIL",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Doctorado en ingenieria civil: ingenieria y construccion."
+ },
+ {
+  "titulo": "ESPECIALISTA DE PRIMER GRADO EN MEDICINA GENERAL INTEGRAL",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica clinica."
+ },
+ {
+  "titulo": "ESPECIALISTA EN DERECHO PROCESAL PENAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho, campo 04 en ambas taxonomias."
+ },
+ {
+  "titulo": "ESPECIALISTA EN OBSTETRICIA Y GINECOLOGIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica clinica."
+ },
+ {
+  "titulo": "INGENIERA EN FINANZAS CONTADOR PUBLICO AUDITOR",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Finanzas, contabilidad y auditoria pese al titulo de ingenieria."
+ },
+ {
+  "titulo": "INGENIERO EN GERENCIA DE SISTEMAS",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "media",
+  "razon": "En Ecuador 'sistemas' refiere a informatica; el componente gerencial podria acercarlo a 04."
+ },
+ {
+  "titulo": "LICENCIADA EN CIENCIAS DE LA EDUCACION ESPECIALIDAD EDUCACION ESPECIAL Y PREESCOLAR",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente en ciencias de la educacion."
+ },
+ {
+  "titulo": "LICENCIADA EN EDUCACION ESPECIALIDAD ESPANOL Y LITERATURA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Formacion docente; la mencion disciplinar no cambia el campo."
+ },
+ {
+  "titulo": "LICENCIADO EN CIENCIAS JURIDICAS Y SOCIALES",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Ciencias juridicas equivale a Derecho."
+ },
+ {
+  "titulo": "MAESTRIA EN ESTETICA Y TEORIA DE LAS ARTES",
+  "cine": "02",
+  "rant": "02",
+  "confianza": "alta",
+  "razon": "Teoria y estetica del arte: artes y humanidades."
+ },
+ {
+  "titulo": "MAGISTER EN CIBERSEGURIDAD",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "alta",
+  "razon": "Seguridad informatica, campo TIC."
+ },
+ {
+  "titulo": "MAGISTER EN COMUNICACION POLITICA MENCION EN GOBERNANZA Y PROCESOS ELECTORALES",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "alta",
+  "razon": "Comunicacion y ciencias politicas."
+ },
+ {
+  "titulo": "MAGISTER EN DERECHO MENCION EN DERECHO PROCESAL CONSTITUCIONAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho."
+ },
+ {
+  "titulo": "MAGISTER EN DISENO ARQUITECTONICO AVANZADO",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Arquitectura se ubica en ingenieria, industria y construccion."
+ },
+ {
+  "titulo": "MAGISTER EN EDUCACION MENCION EN EDUCACION FISICA Y DEPORTE",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Maestria en educacion (formacion docente); ademas deporte docente es 01 en RANT."
+ },
+ {
+  "titulo": "MAGISTER EN GERENCIA EMPRESARIAL CON MENCION EN MARKETING",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Administracion de empresas y marketing."
+ },
+ {
+  "titulo": "MAGISTER EN INGENIERIA QUIMICA APLICADA",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Ingenieria quimica, no quimica pura."
+ },
+ {
+  "titulo": "MAGISTER EN NEGOCIOS DIGITALES",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Negocios y comercio digital; dominio de administracion."
+ },
+ {
+  "titulo": "MAGISTER EN QUIMICA",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "alta",
+  "razon": "Quimica como ciencia natural."
+ },
+ {
+  "titulo": "MAGISTER EN TECNOLOGIAS DE LA INFORMACION MENCION EN SEGURIDAD DE REDES Y COMUNICACIONES",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "alta",
+  "razon": "TIC: redes y seguridad informatica."
+ },
+ {
+  "titulo": "MASTER EN ENDOCRINOLOGIA AVANZADA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Area clinica medica."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN DERECHO AMBIENTAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Es una rama del Derecho, no gestion ambiental tecnica."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN GESTION Y EMPRENDIMIENTO DE PROYECTOS CULTURALES",
+  "cine": "02",
+  "rant": "02",
+  "confianza": "media",
+  "razon": "Gestion cultural se adscribe a artes y humanidades; el enfasis en emprendimiento podria llevarlo a 04."
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN PLANIFICACION DE PROYECTOS DE DESARROLLO RURAL Y GESTION SOSTENIBLE",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "media",
+  "razon": "Desarrollo rural se asocia al sector agropecuario; alternativa plausible 05 por la gestion sostenible. [auditoria: La propuesta 08/08 confunde el ESCENARIO (lo rural) con el DOMINIO DE CONTENIDO (regla 1). El título no trata de producción agrícola, pecuaria, forestal ni veterinaria: trata de planificación y gestión de proyectos de desarrollo territorial rural y cooperación al desarrollo, que es ciencias sociales. Evidencia dura del propio RANT (/Users/ivan/DEV/utmach/campos de conocimiento/json/titulaciones_campos_conocimiento_ces.json, regla 5): existe un campo específico completo \"Desarrollo territorial rural\" dentro del campo amplio 03 - \"Magíster en Desarrollo Rural\" (03), \"Magíster en Gestión y Planificación del Territorio Rural\" (03), \"Especialista en Desarrollo Territorial Rural\" (03); y el componente de proyectos también es 03 - \"Especialista en Proyectos de Desarrollo\" y \"Especialista en Gestión de Proyectos de Desarrollo\" (03, frente a \"Especialista en Gestión de Proyectos\" genérico que sí es 04). El único registro rural en 08 es \"Magíster en Agropecuaria con mención en Gestión del Desarrollo Rural Sostenible\", donde el núcleo disciplinar es Agropecuaria y lo rural es solo la mención: falso amigo para este caso. La alternativa 05 tampoco procede: \"gestión sostenible\" aquí es sostenibilidad socioterritorial del desarrollo, no ciencias del medio ambiente ni manejo de recursos naturales (cf. \"Magíster en Desarrollo Sostenible\" y \"Sustentabilidad para el Desarrollo\", ambos 03). CINE-F 2013 coincide: estudios del desarrollo, sociología rural y planificación territorial socioeconómica caen en el campo amplio 03. Confianza: alta para RANT (respaldo literal en el Anexo II), media-alta para CINE.]"
+ },
+ {
+  "titulo": "MEDICO CIRUJANO",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Titulo medico de tercer nivel."
+ },
+ {
+  "titulo": "PSICOLOGO",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "alta",
+  "razon": "Psicologia general: 03 en ambas taxonomias (no consta mencion clinica)."
+ },
+ {
+  "titulo": "TECNOLOGO EN INFORMATICA MENCION ANALISIS DE SISTEMAS",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "alta",
+  "razon": "Informatica y analisis de sistemas: TIC."
+ },
+ {
+  "titulo": "DOCTOR A DENTRO DEL PROGRAMA DE DOCTORADO EN BIOLOGIA MOLECULAR BIOMEDICINA Y SALUD",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "media",
+  "razon": "Doctorado biomedico orientado a salud; alternativa 05 por el componente de biologia molecular"
+ },
+ {
+  "titulo": "DOCTORA DENTRO DEL PROGRAMA EN DOCTORADO EN DESARROLLO PSICOLOGICO APRENDIZAJE Y SALUD",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "media",
+  "razon": "Psicologia del desarrollo y del aprendizaje, no clinica ni formacion docente"
+ },
+ {
+  "titulo": "ESPECIALISTA DE PRIMER GRADO EN PSIQUIATRIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica clinica"
+ },
+ {
+  "titulo": "ESPECIALISTA EN DIABETOLOGIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica clinica"
+ },
+ {
+  "titulo": "ESPECIALISTA EN OFTALMOLOGIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica clinica"
+ },
+ {
+  "titulo": "INGENIERA EN GESTION EMPRESARIAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Administracion de empresas"
+ },
+ {
+  "titulo": "INGENIERO EN MANEJO Y CONSERVACION DEL MEDIO AMBIENTE",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "alta",
+  "razon": "Gestion ambiental y manejo de recursos naturales, no ingenieria ambiental de procesos"
+ },
+ {
+  "titulo": "LICENCIADA EN CIENCIAS DE LA EDUCACION ESPECIALIZACION ADMINISTRACION Y SUPERVISION EDUCATIVA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Ciencias de la educacion (regla de formacion docente)"
+ },
+ {
+  "titulo": "LICENCIADA EN PSICORREHABILITACION Y EDUCACION ESPECIAL",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "media",
+  "razon": "Educacion especial predomina; componente de psicorrehabilitacion podria llevar a 09"
+ },
+ {
+  "titulo": "LICENCIADO EN CIENCIAS SOCIALES POLITICAS Y ECONOMICAS",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "alta",
+  "razon": "Ciencias sociales, politicas y economia"
+ },
+ {
+  "titulo": "MAESTRO EN DIABETES Y OBESIDAD CON MENCION EN MANEJO NUTRICIONAL",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Maestria en area clinica y nutricional; 'maestro' es grado, no docencia"
+ },
+ {
+  "titulo": "MAGISTER EN CIENCIA DE LOS ALIMENTOS",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Procesamiento de alimentos / agroindustria va a 07 en ambas"
+ },
+ {
+  "titulo": "MAGISTER EN CONTABILIDAD Y AUDITORIA CON MENCION EN GESTION TRIBUTARIA",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Contabilidad y auditoria"
+ },
+ {
+  "titulo": "MAGISTER EN DERECHO MENCION EN DERECHOS CONSTITUCIONALES HUMANOS Y AMBIENTALES",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho"
+ },
+ {
+  "titulo": "MAGISTER EN DISENO MECANICO",
+  "cine": "07",
+  "rant": "07",
+  "confianza": "alta",
+  "razon": "Ingenieria mecanica"
+ },
+ {
+  "titulo": "MAGISTER EN EDUCACION MENCION EN INTERVENCION PSICOPEDAGOGICA",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "alta",
+  "razon": "Educacion y psicopedagogia"
+ },
+ {
+  "titulo": "MAGISTER EN GESTION DE CALIDAD EN SALUD Y SEGURIDAD DEL PACIENTE",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Gestion de servicios de salud / salud publica"
+ },
+ {
+  "titulo": "MAGISTER EN INTELIGENCIA ARTIFICIAL PARA LA EDUCACION",
+  "cine": "01",
+  "rant": "01",
+  "confianza": "media",
+  "razon": "Tecnologia aplicada a la educacion (finalidad pedagogica); alternativa 06 por el contenido tecnico"
+ },
+ {
+  "titulo": "MAGISTER EN NUTRICION Y DIETETICA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Nutricion y dietetica"
+ },
+ {
+  "titulo": "MAGISTER EN RECURSOS NATURALES RENOVABLES CON MENCION EN MANEJO Y PRESERVACION DE LOS RECURSOS NATURALES",
+  "cine": "05",
+  "rant": "05",
+  "confianza": "alta",
+  "razon": "Manejo de recursos naturales y medio ambiente"
+ },
+ {
+  "titulo": "MAGISTER EN TRABAJO SOCIAL MENCION EN METODOS Y TECNICAS DE INVESTIGACION",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Trabajo social va a 09 en ambas taxonomias"
+ },
+ {
+  "titulo": "MASTER OF SCIENCE GEOGRAPHICAL INFORMATION SCIENCE SYSTEMS",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "baja",
+  "razon": "SIG entendido como sistemas de informacion; alternativas plausibles 05 (ciencias de la tierra) o 07 (geomatica/topografia)"
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN DERECHO DEL COMERCIO INTERNACIONAL",
+  "cine": "04",
+  "rant": "04",
+  "confianza": "alta",
+  "razon": "Derecho y comercio"
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN INGENIERIA DE SOFTWARE Y SISTEMAS INFORMATICOS",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "alta",
+  "razon": "Software e informatica"
+ },
+ {
+  "titulo": "MASTER UNIVERSITARIO EN PRODUCCION Y SANIDAD ANIMAL",
+  "cine": "08",
+  "rant": "08",
+  "confianza": "alta",
+  "razon": "Produccion pecuaria y veterinaria"
+ },
+ {
+  "titulo": "MEDICO ESPECIALISTA GASTROENTEROLOGIA",
+  "cine": "09",
+  "rant": "09",
+  "confianza": "alta",
+  "razon": "Especialidad medica clinica"
+ },
+ {
+  "titulo": "SOCIOLOGA",
+  "cine": "03",
+  "rant": "03",
+  "confianza": "alta",
+  "razon": "Sociologia"
+ },
+ {
+  "titulo": "TECNOLOGO EN INFORMATICA Y COMPUTACION",
+  "cine": "06",
+  "rant": "06",
+  "confianza": "alta",
+  "razon": "Informatica y computacion"
+ }
+]

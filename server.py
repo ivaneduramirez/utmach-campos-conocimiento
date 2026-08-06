@@ -72,6 +72,19 @@ def cifrar():
     return send_from_directory(HERE, "cifrar.html")
 
 
+@app.get("/recifrar-campos.html")
+def recifrar_campos():
+    return send_from_directory(HERE, "recifrar-campos.html")
+
+
+@app.get("/campos-nuevo.js")
+def campos_nuevo():
+    """Datos actualizados de Campos, en claro y solo local, para recifrar-campos.html."""
+    if os.path.exists(os.path.join(HERE, "campos-nuevo.js")):
+        return send_from_directory(HERE, "campos-nuevo.js")
+    return Response("", mimetype="application/javascript")
+
+
 @app.get("/datos-senescyt.js")
 def datos_cifrados():
     if os.path.exists(os.path.join(HERE, "datos-senescyt.js")):

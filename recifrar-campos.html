@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./utmach-logo.png">
+<title>Información Académica de Profesores UTMACH · Recifrar Campos</title>
+<style>
+  :root{
+    color-scheme:light;
+    --azul-900:#062044; --azul-700:#0E4C92; --azul-500:#1D6BC4; --azul-100:#DCE8F7; --azul-050:#F0F5FC;
+    --rojo-acento:#E63950; --papel:#F5F8FC; --panel:#FFFFFF; --tinta:#11203A; --tinta-2:#4E6076;
+    --linea:#D3DEEC; --ok:#0E7A4F; --bad:#C8102E;
+    --sombra:0 1px 3px rgba(6,32,68,.10),0 4px 16px rgba(6,32,68,.07);
+  }
+  @media (prefers-color-scheme: dark){:root{
+    color-scheme:dark;
+    --azul-900:#071426; --azul-700:#4E93DC; --azul-500:#5FA3E8; --azul-100:#14263D; --azul-050:#101D30;
+    --rojo-acento:#FF6A72; --papel:#0A1220; --panel:#111C2E; --tinta:#E5EDF8; --tinta-2:#9CB0C9;
+    --linea:#24344B; --ok:#40B57F; --bad:#FF7A80;
+    --sombra:0 1px 3px rgba(0,0,0,.45),0 4px 16px rgba(0,0,0,.28);
+  }}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--papel);color:var(--tinta);min-height:100vh;
+    font:15px/1.55 "Avenir Next","Segoe UI",-apple-system,system-ui,sans-serif}
+  .topbar{background:var(--azul-900);color:#fff;padding:14px 22px;display:flex;align-items:center;gap:14px;
+    border-bottom:3px solid var(--rojo-acento);box-shadow:var(--sombra)}
+  .topbar img{width:38px;height:38px;border-radius:9px;background:#fff;padding:3px;object-fit:contain}
+  .topbar h1{margin:0;font-size:16px;font-weight:600}
+  .topbar .sub{font-size:12px;opacity:.75;margin-top:2px}
+  .wrap{max-width:680px;margin:0 auto;padding:28px 18px 60px}
+  .card{background:var(--panel);border:1px solid var(--linea);border-radius:14px;box-shadow:var(--sombra);padding:22px 24px;margin-bottom:16px}
+  h2{margin:0 0 10px;font-size:17px}
+  p{color:var(--tinta-2);font-size:14px;line-height:1.6}
+  .step{display:flex;gap:11px;margin:11px 0;font-size:13.5px;color:var(--tinta-2)}
+  .step b{color:var(--tinta)}
+  .num{flex:none;width:24px;height:24px;border-radius:50%;background:var(--azul-050);color:var(--azul-700);
+    display:grid;place-items:center;font-weight:700;font-size:12px;border:1px solid var(--linea)}
+  .btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:9px;padding:12px 18px;
+    font:inherit;font-size:14px;font-weight:600;cursor:pointer;background:var(--azul-700);color:#fff}
+  .btn:disabled{opacity:.5;cursor:default}
+  .estado{margin-top:16px;font-size:13.5px;padding:12px 14px;border-radius:9px;display:none;line-height:1.55}
+  .estado.ok{display:block;background:color-mix(in srgb,var(--ok) 12%,transparent);color:var(--ok);border:1px solid var(--ok)}
+  .estado.err{display:block;background:color-mix(in srgb,var(--bad) 10%,transparent);color:var(--bad);border:1px solid var(--bad)}
+  .campo{margin-top:14px}
+  label{display:block;font-size:12px;font-weight:600;color:var(--tinta-2);margin-bottom:5px;
+    letter-spacing:.05em;text-transform:uppercase}
+  textarea{width:100%;min-height:90px;padding:9px 11px;border:1.5px solid var(--linea);border-radius:8px;
+    background:var(--papel);color:var(--tinta);font-family:ui-monospace,Menlo,monospace;font-size:11.5px}
+  a{color:var(--azul-700)}
+  .nota{font-size:12.5px;color:var(--tinta-2);border-top:1px solid var(--linea);padding-top:12px;margin-top:16px}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <img src="./utmach-logo.png" alt="UTMACH">
+  <div>
+    <h1>Información Académica de Profesores UTMACH</h1>
+    <div class="sub">Recifrar el payload de Campos del Conocimiento</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="card">
+    <h2>Volver a cifrar los datos de Campos</h2>
+    <p>Genera el nuevo <code>PAYLOAD_B64</code> e <code>IV_B64</code> de la app de Campos con los datos
+    actualizados, usando <b>la clave de tu sesión</b> — la misma que dejó tu login. Tu contraseña y tu
+    código 2FA <b>no se escriben aquí ni salen de tu navegador</b>.</p>
+
+    <div class="step"><span class="num">1</span><span>Inicia sesión en <a href="./utmach_campos_conocimiento.html"><b>Campos del Conocimiento</b></a> (contraseña + código de 6 dígitos).</span></div>
+    <div class="step"><span class="num">2</span><span>Vuelve aquí y pulsa <b>Cifrar</b>. Se descargará <code>payload-campos.txt</code>.</span></div>
+    <div class="step"><span class="num">3</span><span>Entrégame ese archivo: lo inserto en la app y publicamos.</span></div>
+
+    <div style="margin-top:18px"><button class="btn" id="go">🔒 Cifrar y descargar payload-campos.txt</button></div>
+    <div class="estado" id="estado"></div>
+  </div>
+
+  <div class="card">
+    <h2>Verificación previa</h2>
+    <p>Antes de cifrar, esta herramienta <b>descifra el payload actual</b> con tu sesión y comprueba que la
+    clave es correcta y que el dato nuevo tiene la estructura esperada. Si algo no cuadra, no genera nada.</p>
+    <div id="chk" class="estado"></div>
+    <div class="nota">Los datos nuevos se cargan desde <code>campos-nuevo.js</code> (generado localmente).
+    Si no existe, se te avisa y no se cifra nada.</div>
+  </div>
+</div>
+
+<script src="campos-nuevo.js"></script>
+<script>
+const LS = "utmach-sesion";
+const b64d = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+const b64e = b => btoa(String.fromCharCode(...new Uint8Array(b)));
+const $ = s => document.querySelector(s);
+function msg(el, t, err){ el.innerHTML = t; el.className = "estado " + (err ? "err" : "ok"); }
+
+async function gzip(str){
+  const s = new Blob([new TextEncoder().encode(str)]).stream().pipeThrough(new CompressionStream("gzip"));
+  return new Uint8Array(await new Response(s).arrayBuffer());
+}
+async function claveSesion(usos){
+  const v = localStorage.getItem(LS);
+  if(!v) return null;
+  return crypto.subtle.importKey("raw", b64d(v), {name:"AES-GCM"}, false, usos);
+}
+
+$('#go').addEventListener('click', async () => {
+  const est = $('#estado'), chk = $('#chk');
+  try{
+    const key = await claveSesion(["encrypt"]);
+    if(!key){ msg(est, "No hay sesión activa. Inicia sesión primero en «Campos del Conocimiento» y vuelve.", true); return; }
+    if(!window.CAMPOS_NUEVO){ msg(est, "No se encontró <code>campos-nuevo.js</code>. Genera primero los datos actualizados.", true); return; }
+
+    const D = window.CAMPOS_NUEVO;
+    if(!D.profesores || !Array.isArray(D.profesores) || !D.campos){
+      msg(est, "El dato nuevo no tiene la estructura esperada (faltan <code>profesores</code> o <code>campos</code>).", true); return;
+    }
+    msg(chk, `✓ Estructura correcta: <b>${D.profesores.length}</b> profesores · generado ${D.generado || '—'} · cobertura ${JSON.stringify(D.tot||{})}`, false);
+
+    const plano = await gzip(JSON.stringify(D));
+    const iv = crypto.getRandomValues(new Uint8Array(12));
+    const ct = await crypto.subtle.encrypt({name:"AES-GCM", iv}, key, plano);
+
+    const out = [
+      "# Payload de Campos del Conocimiento — generado " + new Date().toISOString().slice(0,10),
+      "# Profesores: " + D.profesores.length,
+      "",
+      "PAYLOAD_B64=" + b64e(ct),
+      "IV_B64=" + b64e(iv),
+      ""
+    ].join("\n");
+
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([out], {type:"text/plain"}));
+    a.download = "payload-campos.txt";
+    a.click();
+    msg(est, `✓ Generado <b>payload-campos.txt</b> (${Math.round(out.length/1024)} KB, ${D.profesores.length} profesores). Entrégalo para insertarlo en la app.`, false);
+  }catch(e){
+    msg(est, "Error al cifrar: " + e.message, true);
+  }
+});
+</script>
+</body>
+</html>
