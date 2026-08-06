@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./utmach-logo.png">
+<title>Información Académica de Profesores UTMACH · Publicar</title>
+<style>
+  :root{
+    color-scheme:light;
+    --azul-900:#062044; --azul-700:#0E4C92; --azul-500:#1D6BC4; --azul-100:#DCE8F7; --azul-050:#F0F5FC;
+    --rojo-acento:#E63950; --papel:#F5F8FC; --panel:#FFFFFF; --tinta:#11203A; --tinta-2:#4E6076;
+    --linea:#D3DEEC; --ok:#0E7A4F; --bad:#C8102E; --warn:#96700B;
+    --sombra:0 1px 3px rgba(6,32,68,.10),0 4px 16px rgba(6,32,68,.07);
+  }
+  @media (prefers-color-scheme: dark){:root{
+    color-scheme:dark;
+    --azul-900:#071426; --azul-700:#4E93DC; --azul-500:#5FA3E8; --azul-100:#14263D; --azul-050:#101D30;
+    --rojo-acento:#FF6A72; --papel:#0A1220; --panel:#111C2E; --tinta:#E5EDF8; --tinta-2:#9CB0C9;
+    --linea:#24344B; --ok:#40B57F; --bad:#FF7A80; --warn:#E3BC4A;
+    --sombra:0 1px 3px rgba(0,0,0,.45),0 4px 16px rgba(0,0,0,.28);
+  }}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--papel);color:var(--tinta);min-height:100vh;
+    font:15px/1.55 "Avenir Next","Segoe UI",-apple-system,system-ui,sans-serif}
+  .topbar{background:var(--azul-900);color:#fff;padding:14px 22px;display:flex;align-items:center;gap:14px;
+    border-bottom:3px solid var(--rojo-acento);box-shadow:var(--sombra)}
+  .topbar img{width:38px;height:38px;border-radius:9px;background:#fff;padding:3px;object-fit:contain}
+  .topbar h1{margin:0;font-size:16px;font-weight:600}
+  .topbar .sub{font-size:12px;opacity:.75;margin-top:2px}
+  .wrap{max-width:660px;margin:0 auto;padding:26px 18px 60px}
+  .card{background:var(--panel);border:1px solid var(--linea);border-radius:14px;
+    box-shadow:var(--sombra);padding:22px 24px;margin-bottom:16px}
+  h2{margin:0 0 8px;font-size:17px}
+  p{color:var(--tinta-2);font-size:14px;line-height:1.6;margin:0 0 10px}
+  .step{display:flex;gap:11px;margin:10px 0;font-size:13.5px;color:var(--tinta-2);align-items:flex-start}
+  .step b{color:var(--tinta)}
+  .num{flex:none;width:24px;height:24px;border-radius:50%;background:var(--azul-050);color:var(--azul-700);
+    display:grid;place-items:center;font-weight:700;font-size:12px;border:1px solid var(--linea)}
+  .btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:9px;padding:13px 20px;
+    font:inherit;font-size:15px;font-weight:600;cursor:pointer;background:var(--azul-700);color:#fff}
+  .btn:disabled{opacity:.5;cursor:default}
+  .est{margin-top:8px;font-size:13.5px;padding:11px 13px;border-radius:9px;display:none;line-height:1.55}
+  .est.ok{display:block;background:color-mix(in srgb,var(--ok) 12%,transparent);color:var(--ok);border:1px solid var(--ok)}
+  .est.err{display:block;background:color-mix(in srgb,var(--bad) 10%,transparent);color:var(--bad);border:1px solid var(--bad)}
+  .est.wait{display:block;background:var(--azul-050);color:var(--tinta-2);border:1px solid var(--linea)}
+  .fila{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--linea);font-size:13.5px}
+  .fila:last-child{border-bottom:0}
+  .fila .n{flex:1}
+  .fila .badge{font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:99px;
+    background:var(--azul-100);color:var(--azul-700)}
+  .estado-punto{width:9px;height:9px;border-radius:50%;background:var(--tinta-2);flex:none}
+  .estado-punto.ok{background:var(--ok)} .estado-punto.err{background:var(--bad)}
+  a{color:var(--azul-700)}
+  code{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;background:var(--azul-050);
+    padding:1px 5px;border-radius:4px;border:1px solid var(--linea)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <img src="./utmach-logo.png" alt="UTMACH">
+  <div>
+    <h1>Información Académica de Profesores UTMACH</h1>
+    <div class="sub">Cifrar y publicar · las dos herramientas de una vez</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="card">
+    <h2>Publicar los datos actualizados</h2>
+    <p>Cifra de una sola vez los datos del <b>Buscador de Títulos</b> y de <b>Campos del Conocimiento</b>,
+    usando la clave de tu sesión. Tu contraseña y tu código 2FA <b>no se escriben aquí</b>.</p>
+
+    <div class="step"><span class="num">1</span><span>Inicia sesión en <a href="./utmach_campos_conocimiento.html"><b>Campos del Conocimiento</b></a>.</span></div>
+    <div class="step"><span class="num">2</span><span>Vuelve aquí y pulsa el botón. Se descargan <b>dos archivos</b>.</span></div>
+    <div class="step"><span class="num">3</span><span>Entrégalos para insertarlos y publicar.</span></div>
+
+    <div style="margin:18px 0 6px"><button class="btn" id="go">🔒 Cifrar y descargar los dos archivos</button></div>
+    <div class="est" id="est"></div>
+  </div>
+
+  <div class="card">
+    <h2>Qué se va a cifrar</h2>
+    <div class="fila">
+      <span class="estado-punto" id="p1"></span>
+      <span class="n"><b>Buscador de Títulos</b><br><span style="color:var(--tinta-2);font-size:12.5px">desde <code>data.js</code> → <code>datos-senescyt.js</code></span></span>
+      <span class="badge" id="b1">—</span>
+    </div>
+    <div class="fila">
+      <span class="estado-punto" id="p2"></span>
+      <span class="n"><b>Campos del Conocimiento</b><br><span style="color:var(--tinta-2);font-size:12.5px">desde <code>campos-nuevo.js</code> → <code>payload-campos.txt</code></span></span>
+      <span class="badge" id="b2">—</span>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="campos-nuevo.js"></script>
+<script>
+const LS="utmach-sesion";
+const b64d=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+const b64e=b=>btoa(String.fromCharCode(...new Uint8Array(b)));
+const $=s=>document.querySelector(s);
+const est=(t,cls)=>{const e=$('#est'); e.innerHTML=t; e.className='est '+cls;};
+
+async function gzip(str){
+  const s=new Blob([new TextEncoder().encode(str)]).stream().pipeThrough(new CompressionStream("gzip"));
+  return new Uint8Array(await new Response(s).arrayBuffer());
+}
+function baja(nombre, contenido, tipo){
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([contenido],{type:tipo}));
+  a.download=nombre; a.click();
+}
+
+// estado inicial de las dos fuentes
+(function(){
+  if(window.DATA){ $('#p1').className='estado-punto ok'; $('#b1').textContent=window.DATA.length+' prof.'; }
+  else { $('#p1').className='estado-punto err'; $('#b1').textContent='sin data.js'; }
+  if(window.CAMPOS_NUEVO && window.CAMPOS_NUEVO.profesores){
+    $('#p2').className='estado-punto ok'; $('#b2').textContent=window.CAMPOS_NUEVO.profesores.length+' prof.';
+  } else { $('#p2').className='estado-punto err'; $('#b2').textContent='sin campos-nuevo.js'; }
+})();
+
+$('#go').addEventListener('click', async ()=>{
+  const btn=$('#go'); btn.disabled=true;
+  try{
+    const v=localStorage.getItem(LS);
+    if(!v){ est("No hay sesión activa. Inicia sesión en «Campos del Conocimiento» y vuelve.", "err"); btn.disabled=false; return; }
+    const key=await crypto.subtle.importKey("raw", b64d(v), {name:"AES-GCM"}, false, ["encrypt"]);
+
+    if(!window.DATA || !window.CAMPOS_NUEVO){
+      est("Faltan datos locales (<code>data.js</code> o <code>campos-nuevo.js</code>). Genera primero los datos actualizados.", "err");
+      btn.disabled=false; return;
+    }
+
+    est("Cifrando…", "wait");
+    const hechos=[];
+
+    // 1) Buscador de títulos
+    {
+      const plano=await gzip(JSON.stringify({DATA:window.DATA, META:window.META}));
+      const iv=crypto.getRandomValues(new Uint8Array(12));
+      const ct=await crypto.subtle.encrypt({name:"AES-GCM", iv}, key, plano);
+      baja("datos-senescyt.js", `window.SEN={p:"${b64e(ct)}",iv:"${b64e(iv)}"};\n`, "application/javascript");
+      hechos.push(`<b>datos-senescyt.js</b> — ${window.DATA.length} profesores, ${Math.round(b64e(ct).length/1024)} KB`);
+    }
+
+    // 2) Campos del conocimiento
+    {
+      const D=window.CAMPOS_NUEVO;
+      const plano=await gzip(JSON.stringify(D));
+      const iv=crypto.getRandomValues(new Uint8Array(12));
+      const ct=await crypto.subtle.encrypt({name:"AES-GCM", iv}, key, plano);
+      const out=["# Payload de Campos del Conocimiento",
+                 "# Profesores: "+D.profesores.length,
+                 "", "PAYLOAD_B64="+b64e(ct), "IV_B64="+b64e(iv), ""].join("\n");
+      await new Promise(r=>setTimeout(r,400));      // separa las dos descargas
+      baja("payload-campos.txt", out, "text/plain");
+      hechos.push(`<b>payload-campos.txt</b> — ${D.profesores.length} profesores, ${Math.round(out.length/1024)} KB`);
+    }
+
+    est("✓ Listo. Descargados:<br>• "+hechos.join("<br>• ")+"<br><br>Entrega los dos archivos para publicarlos.", "ok");
+  }catch(e){
+    est("Error al cifrar: "+e.message, "err");
+  }
+  btn.disabled=false;
+});
+</script>
+</body>
+</html>

@@ -77,6 +77,12 @@ def recifrar_campos():
     return send_from_directory(HERE, "recifrar-campos.html")
 
 
+@app.get("/publicar.html")
+def publicar():
+    """Cifra de una sola vez los datos del buscador y los de campos."""
+    return send_from_directory(HERE, "publicar.html")
+
+
 @app.get("/campos-nuevo.js")
 def campos_nuevo():
     """Datos actualizados de Campos, en claro y solo local, para recifrar-campos.html."""
