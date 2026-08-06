@@ -89,7 +89,12 @@
 <script>
 const LS = "utmach-sesion";
 const b64d = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
-const b64e = b => btoa(String.fromCharCode(...new Uint8Array(b)));
+// Codifica por bloques: con varios MB, String.fromCharCode(...arr) desborda la pila.
+function b64e(buf){
+  const b = new Uint8Array(buf), CH = 0x8000; let s = "";
+  for(let i=0;i<b.length;i+=CH) s += String.fromCharCode.apply(null, b.subarray(i, i+CH));
+  return btoa(s);
+}
 const $ = s => document.querySelector(s);
 function msg(el, t, err){ el.innerHTML = t; el.className = "estado " + (err ? "err" : "ok"); }
 
